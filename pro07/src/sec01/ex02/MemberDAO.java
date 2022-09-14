@@ -1,10 +1,10 @@
-package sec01.ex01;
+package sec01.ex02;
 
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,16 +14,20 @@ public class MemberDAO {
 	private static final String user = "scott";
 	private static final String pwd = "tiger";
 	private Connection con;
-	private Statement stmt;
+	//private Statement stmt;
+	private PreparedStatement pstmt;
 	
-	public List<MemberVO> listMembers() {
-		List<MemberVO> list = new ArrayList<MemberVO>();
+	public List listMembers() {
+		List list = new ArrayList();
 		try {
 			connDB();
 			String query = "select * from t_member ";
-			System.out.println(query);
+			System.out.println("prepareStatement: " + query);
+			pstmt = con.prepareStatement(query);
+			ResultSet rs = pstmt.executeQuery(query);
+			//System.out.println(query);
 			// SQL 문으로 회원 정보를 조회 while 문을 돌리기 위해서...
-			ResultSet rs = stmt.executeQuery(query);
+			//ResultSet rs = stmt.executeQuery(query);
 			while (rs.next()) {
 				// 조회한 레코드의 각 컬럼 값을 받아 온다
 				String id = rs.getString("id");
@@ -42,7 +46,7 @@ public class MemberDAO {
 				list.add(vo);				
 			}
 			rs.close(); //DB는 항상 닫아줘야됨
-			stmt.close();
+			pstmt.close();
 			con.close();			
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -57,8 +61,8 @@ public class MemberDAO {
 			System.out.println("Oracle 드라이버 로딩 성공");
 			con = DriverManager.getConnection(url, user, pwd);
 			System.out.println("Connection 생성 성공");
-			stmt = con.createStatement();
-			System.out.println("Statement 생성 성공");
+			//stmt = con.createStatement();
+			//System.out.println("Statement 생성 성공");
 		} catch (Exception e) {
 			e.printStackTrace();
 		} 		
