@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import signup.MemberDAO;
 import signup.MemberVO;
 
-@WebServlet("/sub04/@@@@")
+@WebServlet("/sub04/signup")
 public class MemberServlet extends HttpServlet{
 
 	@Override
