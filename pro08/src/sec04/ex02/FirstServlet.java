@@ -10,17 +10,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-//@WebServlet("/first")
+@WebServlet("/first")
 public class FirstServlet extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
-		response.setContentType("texy/html;charset=utf-8");
+		response.setContentType("text/html;charset=utf-8");
 		
 		request.setAttribute("address", "서울시 성북구");
 		RequestDispatcher dispatch = request.getRequestDispatcher("second");
-//		response.sendRedirect("second");
 		dispatch.forward(request, response);
 	}
 	

@@ -7,6 +7,7 @@ import java.util.List;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -71,9 +72,10 @@ public class MemberServlet extends HttpServlet{
 		                +name+"</td><td>"
 		                +email+"</td><td>"
 		                +joinDate+"</td><td>"
-	                    +"<a href='/pro07/member3?command=delMember&id="+id+"'>삭제 </a></td></tr>");		 		
+	                    +"<a href='/project03/sub04/signup?command=delMember&id="+id+"'>삭제 </a></td></tr>");		 		
 		}
 		out.print("</table></body></html>");
-		out.print("<a href='/pro07/memberForm.html'>새 회원 등록하기</a>");
+		out.print("<a href='/project03/sub04/sub04.html'>새 회원 등록하기</a>");
+		
 	}
 }
