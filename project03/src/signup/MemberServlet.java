@@ -41,13 +41,13 @@ public class MemberServlet extends HttpServlet{
 	      
 		if(command!= null && command.equals("addMember")){
 			 String _id=request.getParameter("id");
-			 String _pwd=request.getParameter("pwd");
+			 String _pass=request.getParameter("pass");
 			 String _name=request.getParameter("name");
 			 String _email=request.getParameter("email");
 			 
 			 MemberVO vo=new MemberVO();
 			 vo.setId(_id);
-			 vo.setPwd(_pwd);
+			 vo.setPass(_pass);
 			 vo.setName(_name);
 			 vo.setEmail(_email);	
 			 dao.addMember(vo);
@@ -63,12 +63,12 @@ public class MemberServlet extends HttpServlet{
 		for (int i=0; i<list.size(); i++){
 			MemberVO memberVO=(MemberVO) list.get(i);
 	 		String id=memberVO.getId();
-	 		String pwd = memberVO.getPwd();
+	 		String pass = memberVO.getPass();
 	 		String name = memberVO.getName();
 	 		String email =memberVO.getEmail();
 	 		Date joinDate = memberVO.getJoinDate();	
 	 		out.print("<tr><td>"+id+"</td><td>"
-		                +pwd+"</td><td>"
+		                +pass+"</td><td>"
 		                +name+"</td><td>"
 		                +email+"</td><td>"
 		                +joinDate+"</td><td>"

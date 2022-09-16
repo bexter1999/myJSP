@@ -5,7 +5,7 @@ import java.sql.Date;
 public class MemberVO {
 	// t_member 테이블의 컬럼 이름과 동일한 자료형과 이름으로 속성을 선언
 	private String id;
-	private String pwd;
+	private String pass;
 	private String name;
 	private String email;
 	private Date joinDate;
@@ -23,12 +23,12 @@ public class MemberVO {
 		this.id = id;
 	}
 
-	public String getPwd() {
-		return pwd;
+	public String getPass() {
+		return pass;
 	}
 
-	public void setPwd(String pwd) {
-		this.pwd = pwd;
+	public void setPass(String pass) {
+		this.pass = pass;
 	}
 
 	public String getName() {

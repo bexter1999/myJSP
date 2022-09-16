@@ -11,19 +11,23 @@
     
 	<link rel="shortcut icon" href="images/police-hat.ico">
     <link rel="stylesheet" href="css/style.css">
-	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery-1.12.4.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/sub_signup_script.js"></script>
 	<script>
 		function fn_sendMember(){
 		//자바스크립트에서 <form> 태그의 name으로 접근해 입력한 값들을 얻는다.
 		var frmMember = document.frmMember;
 		var id = frmMember.id.value;
-		var pwd = frmMember.pwd.value;
+		var pass = frmMember.pass.value;
+		var pass_confirm = frmMember.pass_confirm.value;		
 		var name = frmMember.name.value;
 		var email = frmMember.email.value;
 			if(id.length == 0 || id == ""){
 				alert("아이디는 필수입니다.");
-			} else if(pwd.length == 0 || pwd == ""){
+			} else if(pass.length == 0 || pass == ""){
+				alert("비밀번호는 필수입니다.");
+			} else if(pass_confirm.length == 0 || pass_confirm == "" || pass_confirm.equals(pass)){
 				alert("비밀번호는 필수입니다.");
 			} else if(name.length == 0 || name == ""){
 				alert("이름은 필수입니다.");
@@ -41,6 +45,9 @@
 	</script>
 </head>
 <body>
+<script>
+	var login_state = false;
+</script>
     <header id="header">
         <div class="headerTit cf">
 			<h1><span class="hidden">경찰청</span><a href="../index.html"><img src="images/mark.png" id="policeMainLogo" class="fl" alt="경찰청 메인 로고" tabindex=""></a>
@@ -282,7 +289,80 @@
 				<a href="../sub02/sub02.html"><img src="images/print.PNG" id="print" alt="프린트" tabindex=""></a>
 			</div>
 		</div>
-		<div id="join_box" class="join_box">
+	</section>
+	<script>
+  var userid = '';
+</script>
+    		
+		<section id="main" class="main">
+			<div id="signup_content">
+				<div id="join_box" class="join_box">
+					<span class="signup_title">회원 가입</span>
+					<form name="member_form" method="post">
+
+<script>
+	/* 중복 아이디 체크 상태 및 현재 입력한 아이디 변수 */
+	var check_id_var = false;
+	var current_check_id;
+</script>
+										
+						<div class="form id">
+							<div class="col1">아이디</div>
+							<div class="col2">
+								<label>
+									<input autocomplete="off" maxlength="11" type="text" name="id">
+									<div class="id_image info_image"></div>
+								</label>
+							</div>
+							<div class="id_info_box">
+<div class='id_info signup_info'></div>								<div class="id_check_text">아이디 확인중입니다.</div>
+							</div>								
+						</div>
+						<div class="form password">
+							<div class="col1">비밀번호</div>
+							<div class="col2">
+								<label>
+									<input autocomplete="off" maxlength="15" type="password" name="pass">
+									<div class="pass_image info_image"></div>
+								</label>
+							</div>
+							<div class="password_info signup_info"></div>
+						</div>
+						<div class="form pass_confirm">
+							<div class="col1">비밀번호 확인</div>
+							<div class="col2">
+								<label>
+									<input autocomplete="off" maxlength="15" type="password" name="pass_confirm">
+									<div class="pass_confirm_image info_image"></div>
+								</label>
+							</div>
+							<div class="pass_confirm_info signup_info"></div>
+						</div>
+						<div class="form name">
+							<div class="col1">이름</div>
+							<div class="col2">
+								<input autocomplete="off" maxlength="5" type="text" name="name">
+							</div>
+							<div class="name_info signup_info"></div>
+						</div>
+						<div class="form email">
+							<div class="col1">이메일</div>
+							<div class="col2 cf">
+								<input autocomplete="off" maxlength="35" type="text" name="email" class="fl">
+							</div>
+							<div class="email_info signup_info"></div>
+						</div>
+						<div class="bottom_line"></div>
+						<div class="buttons cf">
+							<input class="reset_button fl" type="reset" value="다시입력"/>
+							<input type="button" class="save_button fl" value="가입하기" onclick="fn_sendMember()"/>							
+						</div>
+						<input type="hidden" name="command" value="addMember"/>
+					</form>
+				</div> <!-- join_box -->
+			</div> <!-- main_content -->
+		</section>
+	<!-- <div id="join_box" class="join_box">
 					<span class="signup_title">회원 가입</span>
 					<form name="frmMember" method="post">
 
@@ -335,8 +415,7 @@
 						</div>
 						<input type="hidden" name="command" value="addMember"/>
 					</form>
-				</div> <!-- join_box -->
-	</section>
+				</div> <!-- join_box  -->
     <footer id="footer">
 		<div class="footerNuriBox">
 			<div class="footerNuri">

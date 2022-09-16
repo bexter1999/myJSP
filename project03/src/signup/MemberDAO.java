@@ -35,13 +35,13 @@ public class MemberDAO {
 			ResultSet rs = pstmt.executeQuery(query);
 			while (rs.next()) {
 				String id = rs.getString("id");
-				String pwd = rs.getString("pwd");
+				String pass = rs.getString("pass");
 				String name = rs.getString("name");
 				String email = rs.getString("email");
 				Date joinDate = rs.getDate("joinDate");
 				MemberVO vo = new MemberVO();
 				vo.setId(id);
-				vo.setPwd(pwd);
+				vo.setPass(pass);
 				vo.setName(name);
 				vo.setEmail(email);
 				vo.setJoinDate(joinDate);
@@ -60,7 +60,7 @@ public class MemberDAO {
 		try {
 			con = dataFactory.getConnection();
 			String id = memberVO.getId();
-			String pwd = memberVO.getPwd();
+			String pass = memberVO.getPass();
 			String name = memberVO.getName();
 			String email = memberVO.getEmail();
 			//insert into t_member "001, 100, 오윤석, ashram7, 영업부"
@@ -70,7 +70,7 @@ public class MemberDAO {
 			System.out.println("prepareStatement: " + query);
 			pstmt = con.prepareStatement(query);
 			pstmt.setString(1, id);
-			pstmt.setString(2, pwd);
+			pstmt.setString(2, pass);
 			pstmt.setString(3, name);
 			pstmt.setString(4, email);
 			pstmt.executeUpdate();
