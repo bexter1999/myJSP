@@ -1,4 +1,4 @@
-package signin;
+package sec05.ex01;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -10,10 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import signin.MemberDAO;
-import signin.MemberVO;
-
-@WebServlet("/sub03/login")
+@WebServlet("/login")
 public class LoginServlet extends HttpServlet{
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
@@ -44,11 +41,11 @@ public class LoginServlet extends HttpServlet{
 
 			out.print("<html><body>");
 			out.print("안녕하세요 " + user_id + "님!!!<br>");
-			out.print("<a href='../show'>회원정보보기</a>");
+			out.print("<a href='show'>회원정보보기</a>");
 			out.print("</body></html>");
 		} else {
 			out.print("<html><body>회원 아이디가 틀립니다.");
-			out.print("<a href='/project03/sub03/sub03.html'> 다시 로그인하기</a>");
+			out.print("<a href='login3.html'> 다시 로그인하기</a>");
 			out.print("</body></html>");
 		}		
 	}

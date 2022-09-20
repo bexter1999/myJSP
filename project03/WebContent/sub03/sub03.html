@@ -19,9 +19,9 @@
         var frmLogin=document.frmLogin;
         // <form> 태그 내 <input> 태그의 name 속성으로 입력한 ID와 비밀번호를 받아 온다.
         var user_id=frmLogin.user_id.value;
-        var user_pw=frmLogin.user_pw.value;
+        var user_pwd=frmLogin.user_pwd.value;
   
-        if((user_id.length==0 ||user_id=="") ||(user_pw.length==0 ||user_pw=="")){
+        if((user_id.length==0 ||user_id=="") ||(user_pwd.length==0 ||user_pwd=="")){
             alert("아이디와 비밀번호는 필수입니다.");
         } else {
             // <form> 태그의 전송 장식을 post로 설정한다.
@@ -313,7 +313,7 @@
 						<input type="text" id="idBox" name="user_id" class="guideText" value="이용자 ID">
 					</label>
 					<label for="passwordBox">
-						<input type="password" id="passwordBox" name="user_pw" class="guideText" value="비밀번호">
+						<input type="password" id="passwordBox" name="user_pwd" class="guideText" value="비밀번호">
 					</label>	
 					<input type="button" onClick="fn_validate()" class="idLoginBtn" value="로그인" style="cursor:pointer">
 				</form>
