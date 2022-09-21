@@ -49,17 +49,17 @@
 	</script> -->
 	<%@ include file="../main/header.jsp" %>
 		<section id="section">
-		<div class="secLoginLinkBox">
-			<div class="secLoginLink">
-				<a href="../index.html"><img src="images/home.PNG" alt="홈 버튼" tabindex=""></a>
-				<div class="secLoginLinkText" OnClick="location.href ='../sub01/sub01.html'" style="cursor:pointer;">메뉴 ></div>
-				<div class="secLoginLinkText" OnClick="location.href ='sub03.html'" style="cursor:pointer;"> 로그인 / 회원가입 ></div>
-				<div class="secLoginLinkText bgGray" OnClick="location.href ='sub03.html'" style="cursor:pointer;">회원가입</div>
-				<a href="../sub01/sub01.html"><img src="images/link.png" id="link" alt="링크" tabindex=""></a>
-				<a href="../sub02/sub02.html"><img src="images/print.PNG" id="print" alt="프린트" tabindex=""></a>
+			<div class="secLoginLinkBox">
+				<div class="secLoginLink">
+					<a href="../index.html"><img src="images/home.PNG" alt="홈 버튼" tabindex=""></a>
+					<div class="secLoginLinkText" OnClick="location.href ='../sub01/sub01.html'" style="cursor:pointer;">메뉴 ></div>
+					<div class="secLoginLinkText" OnClick="location.href ='sub03.html'" style="cursor:pointer;"> 로그인 / 회원가입 ></div>
+					<div class="secLoginLinkText bgGray" OnClick="location.href ='sub03.html'" style="cursor:pointer;">회원가입</div>
+					<a href="../sub01/sub01.html"><img src="images/link.png" id="link" alt="링크" tabindex=""></a>
+					<a href="../sub02/sub02.html"><img src="images/print.PNG" id="print" alt="프린트" tabindex=""></a>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 	<script>
   var userid = '';
 </script>
