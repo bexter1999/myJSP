@@ -3,16 +3,16 @@ package signup;
 import java.sql.Date;
 
 public class MemberVO {
-	// t_member Å×ÀÌºíÀÇ ÄÃ·³ ÀÌ¸§°ú µ¿ÀÏÇÑ ÀÚ·áÇü°ú ÀÌ¸§À¸·Î ¼Ó¼ºÀ» ¼±¾ğ
+	// t_member ï¿½ï¿½ï¿½Ìºï¿½ï¿½ï¿½ ï¿½Ã·ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ú·ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ó¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	private String id;
 	private String pwd;
 	private String name;
 	private String email;
 	private Date joinDate;
 	
-	// getter/setter¸¦ »ı¼º
+	// getter/setterï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	public MemberVO() {
-		System.out.println("MemberVO »ı¼ºÀÚ È£Ãâ");
+		System.out.println("MemberVO ìƒì„±ì í˜¸ì¶œ");
 	}
 
 	public String getId() {

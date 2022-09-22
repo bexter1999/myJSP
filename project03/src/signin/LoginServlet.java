@@ -43,12 +43,12 @@ public class LoginServlet extends HttpServlet{
 			session.setAttribute("login.pwd", user_pwd);
 
 			out.print("<html><body>");
-			out.print("¾È³çÇÏ¼¼¿ä " + user_id + "´Ô!!!<br>");
-			out.print("<a href='../show'>È¸¿øÁ¤º¸º¸±â</a>");
+			out.print("ì•ˆë…•í•˜ì„¸ìš” " + user_id + "ë‹˜!!!<br>");
+			out.print("<a href='../show'>íšŒì›ì •ë³´ë³´ê¸°</a>");
 			out.print("</body></html>");
 		} else {
-			out.print("<html><body>È¸¿ø ¾ÆÀÌµğ°¡ Æ²¸³´Ï´Ù.");
-			out.print("<a href='/project03/sub03/sub03.html'> ´Ù½Ã ·Î±×ÀÎÇÏ±â</a>");
+			out.print("<html><body>íšŒì› ì•„ì´ë””ê°€ í‹€ë¦½ë‹ˆë‹¤.");
+			out.print("<a href='/project04/sub03/sub03.html'>ë‹¤ì‹œ ë¡œê·¸ì¸í•˜ê¸°</a>");
 			out.print("</body></html>");
 		}		
 	}

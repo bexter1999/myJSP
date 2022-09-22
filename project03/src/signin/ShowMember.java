@@ -25,14 +25,14 @@ public class ShowMember extends HttpServlet{
 		        id = (String)session.getAttribute("login.id");
 		        pwd = (String)session.getAttribute("login.pwd");
 	   	        out.print("<html><body>");
-		        out.print("¾ÆÀÌµð: " + id +"<br>");
-		        out.print("ºñ¹Ð¹øÈ£: " + pwd +"<br>");
+		        out.print("ï¿½ï¿½ï¿½Ìµï¿½: " + id +"<br>");
+		        out.print("ï¿½ï¿½Ð¹ï¿½È£: " + pwd +"<br>");
 		        out.print("</body></html>");				
 			} else {
-				response.sendRedirect("/project/sub03/sub03.html");
+				response.sendRedirect("/project04/sub03/sub03.html");
 			}
 		}else{
-            response.sendRedirect("/project/sub03/sub03.html");
+            response.sendRedirect("/project04/sub03/sub03.html");
         }
 	}
 }

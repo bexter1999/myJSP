@@ -33,7 +33,7 @@ public class MemberServlet extends HttpServlet{
 	private void doHandle(HttpServletRequest request,HttpServletResponse response)  throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");
-		//SQL¹®À¸·Î Á¶È¸ÇÒ MemberDAO °´Ã¼¸¦ »ı¼º
+		//SQLï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¸ï¿½ï¿½ MemberDAO ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		MemberDAO dao=new MemberDAO();
 		PrintWriter out=response.getWriter();
 
@@ -59,7 +59,7 @@ public class MemberServlet extends HttpServlet{
 		List list=dao.listMembers();
 		out.print("<html><body>");
 		out.print("<table border=1><tr align='center' bgcolor='lightgreen'>");
-		out.print("<td>¾ÆÀÌµğ</td><td>ºñ¹Ğ¹øÈ£</td><td>ÀÌ¸§</td><td>ÀÌ¸ŞÀÏ</td><td>°¡ÀÔÀÏ</td><td >»èÁ¦</td></tr>");
+		out.print("<td>ì•„ì´ë””</td><td>ë¹„ë°€ë²ˆí˜¸</td><td>ì´ë¦„</td><td>ì´ë©”ì¼</td><td>ê°€ì…ì¼</td><td >ì‚­ì œ</td></tr>");
 		for (int i=0; i<list.size(); i++){
 			MemberVO memberVO=(MemberVO) list.get(i);
 	 		String id=memberVO.getId();
@@ -72,10 +72,10 @@ public class MemberServlet extends HttpServlet{
 		                +name+"</td><td>"
 		                +email+"</td><td>"
 		                +joinDate+"</td><td>"
-	                    +"<a href='/project03/sub04/signup?command=delMember&id="+id+"'>»èÁ¦ </a></td></tr>");		 		
+	                    +"<a href='/project04/sub04/signup?command=delMember&id="+id+"'>ì‚­ì œ</a></td></tr>");		 		
 		}
 		out.print("</table></body></html>");
-		out.print("<a href='/project03/sub04/sub04.html'>»õ È¸¿ø µî·ÏÇÏ±â</a>");
+		out.print("<a href='/project04/sub04/sub04.html'>ìƒˆ íšŒì› ë“±ë¡í•˜ê¸°</a>");
 		
 	}
 }
