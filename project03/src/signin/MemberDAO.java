@@ -12,6 +12,8 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
+import signin.MemberVO;
+
 public class MemberDAO {
 	private Connection con;
 	private PreparedStatement pstmt;
@@ -27,7 +29,7 @@ public class MemberDAO {
         }
     }	
 	
-	public List listMembers() {
+    public List listMembers() {
 		List list = new ArrayList();
 		try {
 			con = dataFactory.getConnection();
@@ -37,7 +39,7 @@ public class MemberDAO {
 			pstmt = con.prepareStatement(query);
 			ResultSet rs = pstmt.executeQuery();			
 			while (rs.next()) {
-				// Á¶È¸ÇÑ ·¹ÄÚµåÀÇ °¢ ÄÃ·³ °ªÀ» ¹Ş¾Æ se¿Â´Ù
+				// ì¡°íšŒí•œ ë ˆì½”ë“œì˜ ê° ì»¬ëŸ¼ ê°’ì„ ë°›ì•„ seì˜¨ë‹¤
 				String id = rs.getString("id");
 				String pwd = rs.getString("pwd");
 				String name = rs.getString("name");
@@ -60,6 +62,47 @@ public class MemberDAO {
 			e.printStackTrace();
 		}
 		return list;
+	}
+	
+	public List listMembers(MemberVO memberVO) {
+		List membersList = new ArrayList();
+		String _name=memberVO.getName();
+		try {
+			con = dataFactory.getConnection();
+			String query = "select * from t_member ";
+			
+			if((_name!=null && _name.length()!=0)){
+				 query+=" where name=?";
+				 pstmt = con.prepareStatement(query);
+				 pstmt.setString(1, _name);
+			}else {
+				pstmt = con.prepareStatement(query);	
+			}
+			
+			
+			System.out.println("prepareStatememt: " + query);
+			ResultSet rs = pstmt.executeQuery();
+			while (rs.next()) {
+				String id = rs.getString("id");
+				String pwd = rs.getString("pwd");
+				String name = rs.getString("name");
+				String email = rs.getString("email");
+				Date joinDate = rs.getDate("joinDate");
+				MemberVO vo = new MemberVO();
+				vo.setId(id);
+				vo.setPwd(pwd);
+				vo.setName(name);
+				vo.setEmail(email);
+				vo.setJoinDate(joinDate);
+				membersList.add(vo);
+			}
+			rs.close();
+			pstmt.close();
+			con.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return membersList;
 	}
 	
 	public void addMember(MemberVO memberVO) {
@@ -105,16 +148,16 @@ public class MemberDAO {
 		String pwd = memberVO.getPwd();		
 		try {
 			con = dataFactory.getConnection();
-			//decode() ÇÔ¼ö¸¦ ÀÌ¿ëÇØ id¿Í pwd°¡ Á¸ÀçÇÏ¸é true, Á¸ÀçÇÏÁö ¾ÊÀ¸¸é false¸¦ return
+			//decode() ï¿½Ô¼ï¿½ï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½ï¿½ idï¿½ï¿½ pwdï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ true, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ falseï¿½ï¿½ return
 			String query = "select decode(count(*),1,'true','false') as result from t_member";
 			query += " where id=? and pwd=?";
 			System.out.println(query);
-			//ÆÄ¶ó¸ŞÅÍ·Î Àü´ŞµÈ id¿Í pwd¸¦ ÀÌ¿ëÇØ µ¥ÀÌÅÍº£ÀÌ½º¿¡ ÀÖ´ÂÁö Á¶È¸
+			//ï¿½Ä¶ï¿½ï¿½ï¿½Í·ï¿½ ï¿½ï¿½ï¿½Şµï¿½ idï¿½ï¿½ pwdï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Íºï¿½ï¿½Ì½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ï¿½ï¿½ ï¿½ï¿½È¸
 			pstmt = con.prepareStatement(query);
 			pstmt.setString(1, id);
 			pstmt.setString(2, pwd);	
 			ResultSet rs = pstmt.executeQuery();
-			//Ä¿¼­¸¦ Ã¹¹øÂ° ·¹ÄÚµå·Î À§Ä¡½ÃÅµ´Ï´Ù.
+			//Ä¿ï¿½ï¿½ï¿½ï¿½ Ã¹ï¿½ï¿½Â° ï¿½ï¿½ï¿½Úµï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½Åµï¿½Ï´ï¿½.
 			rs.next(); 
 			result = Boolean.parseBoolean(rs.getString("result"));
 			System.out.println("result=" + result);			
