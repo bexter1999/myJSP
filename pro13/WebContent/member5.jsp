@@ -4,8 +4,11 @@
 <%
 	request.setCharacterEncoding("UTF-8");
 %>    
-<jsp:useBean  id="m"  class="sec01.ex01.MemberBean"  scope="page"/>
-<jsp:setProperty name="m" property="*" />
+	<jsp:useBean  id="m"  class="sec01.ex01.MemberBean"  scope="page"/>
+	<jsp:setProperty name="m" property="id"/>
+	<jsp:setProperty name="m" property="pwd"/>
+	<jsp:setProperty name="m" property="name"/>
+	<jsp:setProperty name="m" property="email"/>
 <%
    MemberDAO  memberDAO=new MemberDAO();
    memberDAO.addMember(m);
@@ -30,7 +33,7 @@
 	   if(membersList.size()==0){
 	%>
 	  <tr>
-	      <td colspan="6">
+	      <td colspan="5">
 	        <p align="center"><b><span style="font-size:9pt;">
 	                      등록된 회원이  없습니다.</span></b></p>
 	      </td>
@@ -41,11 +44,11 @@
 	      MemberBean bean = (MemberBean) membersList.get(i);
 	%>
 	   <tr align="center">
-	  		<td> <jsp:getProperty name="m"  property="id"  /> </td>
-          	<td> <jsp:getProperty name="m"  property="pwd"  />  </td>
-          	<td> <jsp:getProperty name="m"  property="name"     /> </td>
-          	<td> <jsp:getProperty name="m"  property="email"  /> </td>
-          	<td> <jsp:getProperty name="m"  property="joinDate"  /> </td>
+	       <td><%=bean.getId() %></td>
+	       <td><%=bean.getPwd() %></td>
+	       <td><%=bean.getName() %></td>
+	       <td><%=bean.getEmail() %></td>
+	       <td><%=bean.getJoinDate() %></td>
 	   </tr>
 	<%
 	      } // end for

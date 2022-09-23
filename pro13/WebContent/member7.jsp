@@ -4,8 +4,8 @@
 <%
 	request.setCharacterEncoding("UTF-8");
 %>    
-<jsp:useBean  id="m"  class="sec01.ex01.MemberBean"  scope="page"/>
-<jsp:setProperty name="m" property="*" />
+	<jsp:useBean  id="m"  class="sec01.ex01.MemberBean"  scope="page"/>
+	<jsp:setProperty name="m" property="*"/>
 <%
    MemberDAO  memberDAO=new MemberDAO();
    memberDAO.addMember(m);
@@ -41,11 +41,11 @@
 	      MemberBean bean = (MemberBean) membersList.get(i);
 	%>
 	   <tr align="center">
-	  		<td> <jsp:getProperty name="m"  property="id"  /> </td>
-          	<td> <jsp:getProperty name="m"  property="pwd"  />  </td>
-          	<td> <jsp:getProperty name="m"  property="name"     /> </td>
-          	<td> <jsp:getProperty name="m"  property="email"  /> </td>
-          	<td> <jsp:getProperty name="m"  property="joinDate"  /> </td>
+	       <td> <jsp:getProperty name="m" property="id" /></td>
+	       <td><jsp:getProperty name="m" property="pwd" /></td>
+	       <td><jsp:getProperty name="m" property="name" /></td>
+	       <td><jsp:getProperty name="m" property="email" /></td>
+	       <td><jsp:getProperty name="m" property="joinDate" /></td>
 	   </tr>
 	<%
 	      } // end for
