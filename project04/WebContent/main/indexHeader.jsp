@@ -1,5 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"
+    isELIgnored="false" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%
+	request.setCharacterEncoding("UTF-8");
+%>    
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +13,8 @@
 <title>IndexHeader</title>
 </head>
 <body>
+<fmt:setLocale value="${param.lo}"/>
+<fmt:bundle basename="resource.member">
 <div class="pop">
 		<div class="popUpContent">
 			<div class="popUpInner">
@@ -104,203 +112,212 @@
 			<div class="login">
 				 <a href="sub03/sub03.html" title="로그인" class="toolTip" tabindex="5">Login ▶</a>
 			</div>
+			<ul> 
+ 	 			<li class="koImage"><a href="index.jsp?lo=ko"><img src="/project04/images/ko.png"></a></li>
+				<li class="enImage"><a href="index.jsp?lo=en"><img src="/project04/images/en.png"></a></li>
+			</ul> 
+			<div class="timeControl fr">	
+				<span id="counter" class="timerNumber"></span>
+				<span class="timerText">후 자동으로 로그인페이지로 이동합니다.</span>
+				<input class="timeBtn" type="button" value="연장" onclick="counter_reset()">	
+			</div> 
 		</div>
         <div class="headerM cf">
             <div class="menu">
 				<a href="sub01/sub01.html" title="메뉴 버튼" class="toolTip" tabindex="6"><img src="images/menuButton.png" id="menuButton" alt="menuButton" width="45" height="45" tabindex=""></a>
                 <nav class="nav cf">
-					<div class="menuTit"><a href="sub02/sub02.html" title="알림/소식" class="toolTip" tabindex="7"><h2><span>알림/소식</span></h2></a>
+					<div class="menuTit"><a href="sub02/sub02.html" title="알림/소식" class="toolTip" tabindex="7"><h2><span><fmt:message key="mem.onedepth1" /></span></h2></a>
 						<div class="twoInner">
 							<div class="twoDepth cf">
 								<ul class="menuML">
-									<li class="menuSTit"><a href="sub01/sub01.html"  tabindex="14">알림</a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="18">- 공지사항</a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="19">- 보도자료</a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="20">- 사실확인</a></li>
-									<li class="menuSText"><a href="sub03/sub01.html" tabindex="21">- 채용공고</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.html" tabindex="22">- 입찰공고</a></li>
+									<li class="menuSTit"><a href="sub01/sub01.html"  tabindex="14"><fmt:message key="mem.twodepth1Title1" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.html" tabindex="18">- <fmt:message key="mem.twodepth1Text1" /></a></li>
+									<li class="menuSText"><a href="sub01/sub01.html" tabindex="19">- <fmt:message key="mem.twodepth1Text2" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.html" tabindex="20">- <fmt:message key="mem.twodepth1Text3" /></a></li>
+									<li class="menuSText"><a href="sub03/sub01.html" tabindex="21">- <fmt:message key="mem.twodepth1Text4" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.html" tabindex="22">- <fmt:message key="mem.twodepth1Text5" /></a></li>
                                 </ul>
                                 <ul> 
-									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="15">소식</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.html" tabindex="23">- 홍보콘텐츠</a></li>
+									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="15"><fmt:message key="mem.twodepth1Title2" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.html" tabindex="23">- <fmt:message key="mem.twodepth1Text6" /></a></li>
                                 </ul>
                                 <ul>     
-									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="16">정책홍보실</a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="24">- 목표(비전)</a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="25">- 정책실명제</a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="26">- 자치경찰제</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="27">- 인권경찰</a></li>
+									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="16"><fmt:message key="mem.twodepth1Title3" /></a></li>
+									<li class="menuSText"><a href="sub01/sub01.html" tabindex="24">- <fmt:message key="mem.twodepth1Text7" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.html" tabindex="25">- <fmt:message key="mem.twodepth1Text8" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.html" tabindex="26">- <fmt:message key="mem.twodepth1Text9" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="27">- <fmt:message key="mem.twodepth1Text10" /></a></li>
                                 </ul>    
                                 <ul>
-									<li class="menuSTit"><a href="sub01/sub01.html" tabindex="17">경찰청 인권위원회</a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="28">- 위원장 인사말</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.html" tabindex="29">- 활동소식</a></li>
+									<li class="menuSTit"><a href="sub01/sub01.html" tabindex="17"><fmt:message key="mem.twodepth1Title4" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.html" tabindex="28">- <fmt:message key="mem.twodepth1Text11" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.html" tabindex="29">- <fmt:message key="mem.twodepth1Text12" /></a></li>
 								</ul>
 							</div>
 						</div>		
 					</div>
-					<div class="menuTit"><a href="sub03/sub03.html" title="소통/공감" class="toolTip" tabindex="8"><h2><span>소통/공감</span></h2></a>
+					<div class="menuTit"><a href="sub03/sub03.html" title="소통/공감" class="toolTip" tabindex="8"><h2><span><fmt:message key="mem.onedepth2" /></span></h2></a>
 						<div class="twoInner">
 							<div class="twoDepth cf">
                                 <ul class="menuML">        
-									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="30">생활정보</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="34">- 주요뉴스</a></li>
+									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="30"><fmt:message key="mem.twodepth2Title1" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="34">- <fmt:message key="mem.twodepth2Text1" /></a></li>
                                 </ul> 
                                 <ul>        
-									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="31">적극행정</a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="35">- 제도소개</a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="36">- 국민참여</a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="37">- 적극행정 자료실</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.html" tabindex="38">- 적극행정 우수공무원</a></li>
+									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="31"><fmt:message key="mem.twodepth2Title2" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.html" tabindex="35">- <fmt:message key="mem.twodepth2Text2" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.html" tabindex="36">- <fmt:message key="mem.twodepth2Text3" /></a></li>
+									<li class="menuSText"><a href="sub01/sub01.html" tabindex="37">- <fmt:message key="mem.twodepth2Text4" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.html" tabindex="38">- <fmt:message key="mem.twodepth2Text5" /></a></li>
                                 </ul> 
                                 <ul>       
-									<li class="menuSTit"><a href="sub01/sub01.html" tabindex="32">소통게시판</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="39">- 자유게시판</a></li>
+									<li class="menuSTit"><a href="sub01/sub01.html" tabindex="32"><fmt:message key="mem.twodepth2Title3" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="39">- <fmt:message key="mem.twodepth2Text6" /></a></li>
                                 </ul>
                                 <ul>      
-									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="33">추모관</a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="40">- 순직경찰관추모</a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="41">- 경찰영웅</a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="42">- 경찰기념공원</a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="43">- 추모관공지</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.html" tabindex="44">- 행사갤러리</a></li>
+									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="33"><fmt:message key="mem.twodepth2Title4" /></a></li>
+									<li class="menuSText"><a href="sub01/sub01.html" tabindex="40">- <fmt:message key="mem.twodepth2Text7" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.html" tabindex="41">- <fmt:message key="mem.twodepth2Text8" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.html" tabindex="42">- <fmt:message key="mem.twodepth2Text9" /></a></li>
+									<li class="menuSText"><a href="sub01/sub01.html" tabindex="43">- <fmt:message key="mem.twodepth2Text10" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.html" tabindex="44">- <fmt:message key="mem.twodepth2Text11" /></a></li>
 								</ul>
 							</div>	
 						</div>	
 					</div>
-					<div class="menuTit"><a href="sub01/sub01.html" title="신고/지원" class="toolTip" tabindex="9"><h2><span>신고/지원</span></h2></a>
+					<div class="menuTit"><a href="sub01/sub01.html" title="신고/지원" class="toolTip" tabindex="9"><h2><span><fmt:message key="mem.onedepth3" /></span></h2></a>
 						<div class="twoInner">
 							<div class="twoDepth cf">
 								<ul class="menuML">
-									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="45">범죄신고/상담</a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="50">- 경찰민원포털</a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="51">- 가정,학교,성폭력 등<br>&nbsp; 신고/상담</a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="52">- 성범죄 상담 챗봇</a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="53">- 스마트 국민제보</a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="54">- 유실물 통합포털</a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="55">- 산업기술유출 신고</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.html" tabindex="56">- 안전신문고</a></li>
+									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="45"><fmt:message key="mem.twodepth3Title1" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.html" tabindex="50">- <fmt:message key="mem.twodepth3Text1" /></a></li>
+									<li class="menuSText"><a href="sub01/sub01.html" tabindex="51">- <fmt:message key="mem.twodepth3Text2" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.html" tabindex="52">- <fmt:message key="mem.twodepth3Text3" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.html" tabindex="53">- <fmt:message key="mem.twodepth3Text4" /></a></li>
+									<li class="menuSText"><a href="sub01/sub01.html" tabindex="54">- <fmt:message key="mem.twodepth3Text5" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.html" tabindex="55">- <fmt:message key="mem.twodepth3Text6" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.html" tabindex="56">- <fmt:message key="mem.twodepth3Text7" /></a></li>
                                 </ul>
                                 <ul>    
-									<li class="menuSTit"><a href="sub01/sub01.html" tabindex="46">사이버안전지킴이</a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="57">- 사이버범죄 신고/상담</a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="58">- 사이버범죄 예방교육 신청</a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="59">- 인터넷 사기 의심 전화·계좌번호<br>&nbsp; 조회</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="60">- 사이버범죄 예방홍보물</a></li>
+									<li class="menuSTit"><a href="sub01/sub01.html" tabindex="46"><fmt:message key="mem.twodepth3Title2" /></a></li>
+									<li class="menuSText"><a href="sub01/sub01.html" tabindex="57">- <fmt:message key="mem.twodepth3Text8" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.html" tabindex="58">- <fmt:message key="mem.twodepth3Text9" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.html" tabindex="59">- <fmt:message key="mem.twodepth3Text10" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="60">- <fmt:message key="mem.twodepth3Text11" /></a></li>
                                 </ul>
                                 <ul>
-									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="47">안심 서비스</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.html" tabindex="61">- 순찰장소 신청</a></li>
+									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="47"><fmt:message key="mem.twodepth3Title3" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.html" tabindex="61">- <fmt:message key="mem.twodepth3Text12" /></a></li>
                                 </ul>
                                 <ul>
-									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="48">치안정보/지원</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.html" tabindex="62">- 회복적경찰활동 및<br>&nbsp; 범죄피해자 지원</a></li>
+									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="48"><fmt:message key="mem.twodepth3Title4" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.html" tabindex="62">- <fmt:message key="mem.twodepth3Text13" /></a></li>
                                 </ul>
                                 <ul>
-									<li class="menuSTit"><a href="sub01/sub01.html" tabindex="49">각종 서식 다운로드</a></li>
+									<li class="menuSTit"><a href="sub01/sub01.html" tabindex="49"><fmt:message key="mem.twodepth3Title5" /></a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="menuTit"><a href="sub02/sub02.html" title="정보공개" class="toolTip" tabindex="10"><h2><span>정보공개</span></h2></a>
+					<div class="menuTit"><a href="sub02/sub02.html" title="정보공개" class="toolTip" tabindex="10"><h2><span><fmt:message key="mem.onedepth4" /></span></h2></a>
 						<div class="twoInner">		
 							<div class="twoDepth cf">
 								<ul class="menuML">
-									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="63">정보공개제도</a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="67">- 제도안내</a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="68">- 법령/서식</a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="69">- 수수료안내</a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="70">- 접수처안내</a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="71">- 정보공개편람/청구</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.html" tabindex="72">- 정보목록</a></li>
+									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="63"><fmt:message key="mem.twodepth4Title1" /></a></li>
+									<li class="menuSText"><a href="sub01/sub01.html" tabindex="67">- <fmt:message key="mem.twodepth4Text1" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.html" tabindex="68">- <fmt:message key="mem.twodepth4Text2" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.html" tabindex="69">- <fmt:message key="mem.twodepth4Text3" /></a></li>
+									<li class="menuSText"><a href="sub01/sub01.html" tabindex="70">- <fmt:message key="mem.twodepth4Text4" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.html" tabindex="71">- <fmt:message key="mem.twodepth4Text5" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.html" tabindex="72">- <fmt:message key="mem.twodepth4Text6" /></a></li>
                                 </ul>
                                 <ul> 
-									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="64">재정현황</a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="73">- 사업설명자료</a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="74">- 국회심의과정</a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="75">- 예산확정현황</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="76">- 예산집행현황</a></li>
+									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="64"><fmt:message key="mem.twodepth4Title2" /></a></li>
+									<li class="menuSText"><a href="sub01/sub01.html" tabindex="73">- <fmt:message key="mem.twodepth4Text7" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.html" tabindex="74">- <fmt:message key="mem.twodepth4Text8" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.html" tabindex="75">- <fmt:message key="mem.twodepth4Text9" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="76">- <fmt:message key="mem.twodepth4Text10" /></a></li>
                                 </ul>
                                 <ul>
-									<li class="menuSTit"><a href="sub01/sub01.html" tabindex="65">사전정보공표</a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="77">- 사전정보공표목록</a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="78">- 정보공개자료실</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="79">- 비공개세부기준</a></li>
+									<li class="menuSTit"><a href="sub01/sub01.html" tabindex="65"><fmt:message key="mem.twodepth4Title3" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.html" tabindex="77">- <fmt:message key="mem.twodepth4Text11" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.html" tabindex="78">- <fmt:message key="mem.twodepth4Text12" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="79">- <fmt:message key="mem.twodepth4Text13" /></a></li>
                                 </ul>
                                 <ul>
-									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="66">공공데이터</a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="80">- 경찰백서</a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="81">- 공공데이터 개방</a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="82">- 경찰통계자료</a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="83">- 경찰범죄통계</a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="84">- 경찰접수 교통사고 현황</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="85">- 통계연보</a></li>
+									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="66"><fmt:message key="mem.twodepth4Title4" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.html" tabindex="80">- <fmt:message key="mem.twodepth4Text14" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.html" tabindex="81">- <fmt:message key="mem.twodepth4Text15" /></a></li>
+									<li class="menuSText"><a href="sub01/sub01.html" tabindex="82">- <fmt:message key="mem.twodepth4Text16" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.html" tabindex="83">- <fmt:message key="mem.twodepth4Text17" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.html" tabindex="84">- <fmt:message key="mem.twodepth4Text18" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="85">- <fmt:message key="mem.twodepth4Text19" /></a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="menuTit"><a href="sub03/sub03.html" title="법령/정책" class="toolTip" tabindex="11"><h2><span>법령/정책</span></h2></a>
+					<div class="menuTit"><a href="sub03/sub03.html" title="법령/정책" class="toolTip" tabindex="11"><h2><span><fmt:message key="mem.onedepth5" /></span></h2></a>
 						<div class="twoInner">
 							<div class="twoDepth cf">
 								<ul class="menuML">
-									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="86">법령정보</a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="89">- 입법예고</a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="90">- 행정예고</a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="91">- 개정법령</a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="92">- 소관법령</a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="93">- 훈령예규</a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="94">- 법령검색</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.html" tabindex="95">- 판례검색</a></li>
+									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="86"><fmt:message key="mem.twodepth5Title1" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.html" tabindex="89">- <fmt:message key="mem.twodepth5Text1" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.html" tabindex="90">- <fmt:message key="mem.twodepth5Text2" /></a></li>
+									<li class="menuSText"><a href="sub01/sub01.html" tabindex="91">- <fmt:message key="mem.twodepth5Text3" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.html" tabindex="92">- <fmt:message key="mem.twodepth5Text4" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.html" tabindex="93">- <fmt:message key="mem.twodepth5Text5" /></a></li>
+									<li class="menuSText"><a href="sub01/sub01.html" tabindex="94">- <fmt:message key="mem.twodepth5Text6" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.html" tabindex="95">- <fmt:message key="mem.twodepth5Text7" /></a></li>
                                 </ul>
                                 <ul>
-									<li class="menuSTit"><a href="sub01/sub01.html" tabindex="87">국회정보공개</a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="96">- 국회제출자료</a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="97">- 치안정책자료</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.html" tabindex="98">- 국회현장</a></li>
+									<li class="menuSTit"><a href="sub01/sub01.html" tabindex="87"><fmt:message key="mem.twodepth5Title2" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.html" tabindex="96">- <fmt:message key="mem.twodepth5Text8" /></a></li>
+									<li class="menuSText"><a href="sub01/sub01.html" tabindex="97">- <fmt:message key="mem.twodepth5Text9" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.html" tabindex="98">- <fmt:message key="mem.twodepth5Text10" /></a></li>
                                 </ul>
                                 <ul>
-									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="88">규제개혁</a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="99">- 추진과제</a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="100">- 규제혁신</a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="101">- 규제개혁신문고</a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="102">- 규제개혁포털</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="103">- 국민 규제입증요청</a></li>
+									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="88"><fmt:message key="mem.twodepth5Title3" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.html" tabindex="99">- <fmt:message key="mem.twodepth5Text11" /></a></li>
+									<li class="menuSText"><a href="sub01/sub01.html" tabindex="100">- <fmt:message key="mem.twodepth5Text12" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.html" tabindex="101">- <fmt:message key="mem.twodepth5Text13" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.html" tabindex="102">- <fmt:message key="mem.twodepth5Text14" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="103">- <fmt:message key="mem.twodepth5Text15" /></a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="menuTit"><a href="sub01/sub01.html" title="기관소개" class="toolTip" tabindex="12"><h2><span>기관소개</span></h2></a>
+					<div class="menuTit"><a href="sub01/sub01.html" title="기관소개" class="toolTip" tabindex="12"><h2><span><fmt:message key="mem.onedepth6" /></span></h2></a>
 						<div class="twoInner">		
 							<div class="twoDepth cf">
 								<ul class="menuML">
-									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="104">열린청장실</a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="108">- 청장소개</a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="109">- 청장동정</a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="110">- 청장과의 대화</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.html" tabindex="111">- 역대청장소개</a></li>
+									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="104"><fmt:message key="mem.twodepth6Title1" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.html" tabindex="108">- <fmt:message key="mem.twodepth6Text1" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.html" tabindex="109">- <fmt:message key="mem.twodepth6Text2" /></a></li>
+									<li class="menuSText"><a href="sub01/sub01.html" tabindex="110">- <fmt:message key="mem.twodepth6Text3" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.html" tabindex="111">- <fmt:message key="mem.twodepth6Text4" /></a></li>
                                 </ul>
                                 <ul>
-									<li class="menuSTit"><a href="sub01/sub01.html" tabindex="105">조직안내</a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="112">- 조직구성도</a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="113">- 부서별연락처</a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="114">- 전국경찰관서안내</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.html" tabindex="115">- 관광경찰</a></li>
+									<li class="menuSTit"><a href="sub01/sub01.html" tabindex="105"><fmt:message key="mem.twodepth6Title2" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.html" tabindex="112">- <fmt:message key="mem.twodepth6Text5" /></a></li>
+									<li class="menuSText"><a href="sub01/sub01.html" tabindex="113">- <fmt:message key="mem.twodepth6Text6" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.html" tabindex="114">- <fmt:message key="mem.twodepth6Text7" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.html" tabindex="115">- <fmt:message key="mem.twodepth6Text8" /></a></li>
                                 </ul>
                                 <ul>
-									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="106">경찰의이해</a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="116">- 포돌이/포순이</a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="117">- 상징</a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="118">- 계급과역할</a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="119">- 장비소개</a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="120">- 경찰헌장</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.html" tabindex="121">- 서비스헌장</a></li>
+									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="106"><fmt:message key="mem.twodepth6Title3" /></a></li>
+									<li class="menuSText"><a href="sub01/sub01.html" tabindex="116">- <fmt:message key="mem.twodepth6Text9" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.html" tabindex="117">- <fmt:message key="mem.twodepth6Text10" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.html" tabindex="118">- <fmt:message key="mem.twodepth6Text11" /></a></li>
+									<li class="menuSText"><a href="sub01/sub01.html" tabindex="119">- <fmt:message key="mem.twodepth6Text12" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.html" tabindex="120">- <fmt:message key="mem.twodepth6Text13" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.html" tabindex="121">- <fmt:message key="mem.twodepth6Text14" /></a></li>
                                 </ul>
                                 <ul>
-									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="107">경찰역사</a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="122">- 민주·인권·민생경찰의 뿌리</a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="123">- 경찰역사순례길</a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="124">- 역사자료실</a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="125">- 경찰조직연혁</a></li>
+									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="107"><fmt:message key="mem.twodepth6Title4" /></a></li>
+									<li class="menuSText"><a href="sub01/sub01.html" tabindex="122">- <fmt:message key="mem.twodepth6Text15" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.html" tabindex="123">- <fmt:message key="mem.twodepth6Text16" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.html" tabindex="124">- <fmt:message key="mem.twodepth6Text17" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="125">- <fmt:message key="mem.twodepth6Text18" /></a></li>
 								</ul>
 							</div>
 						</div>
@@ -310,5 +327,6 @@
             </div>
         </div>
     </header>
+</fmt:bundle>
 </body>
 </html>
