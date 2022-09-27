@@ -3,7 +3,7 @@
     isELIgnored="false" %>
 <%
 	request.setCharacterEncoding("UTF-8");
-%>>    
+%>   
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +11,7 @@
 	<title>로그인창</title>
 </head>
 <body>
-   <form method="post" action="result.jsp">
+   <form method="post" action="result2.jsp">
 		아이디 :<input type="text" name="userID"><br>
 		비밀번호 :<input type="password" name="userPw"><br>
 		<input type="submit" value="로그인">
