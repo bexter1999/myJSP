@@ -21,7 +21,7 @@
 			</div>
 		</div>
 	</section>
-	<img src="/project03/err/images/github2.png" alt="500 이미지" width="1903" height="900"/>
+	<img src="/project04/err/images/github2.png" alt="500 이미지" width="1903" height="900"/>
 	<%@ include file="../main/footer.jsp" %>
 </body>
 </html>
