@@ -16,7 +16,7 @@
 <body>
 	<form action="result.jsp"  method="post" >
 		 <input type="hidden" name="param1" value="duke.png" ><br>
-		 <input type="hidden" name="param1" value="duke2.png" ><br>
+		 <input type="hidden" name="param2" value="duke2.png" ><br>
 		<input type="submit" value="다운로드" >
 	</form>
 </body>

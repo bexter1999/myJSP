@@ -20,12 +20,12 @@
 파라미터 2 : <c:out value="${file2 }" /><br>
 
 <c:if test="${not empty file1 }">
-	<img src="${contextPath }/download.do?fileName=${file1 }" width=300 height=300 /> <br>
+	<img src="${contextPath }/download.do?fileName=${file1}" width=300 height=300 /> <br>
 </c:if>
 <c:if test="${not empty file2 }">
-	<img src="${contextPath }/download.do?fileName=${file2 }" width=300 height=300 /> <br>
+	<img src="${contextPath }/download.do?fileName=${file2}" width=300 height=300 /> <br>
 </c:if>
 	파일 내려받기 : <br>
-	<a href="${contextPath }/download.do?fileName=${file2 }" >파일 내려받기</a><br>
+	<a href="${contextPath }/download.do?fileName=${file2}" >파일 내려받기</a><br>
 </body>
 </html>
