@@ -31,7 +31,7 @@
             // <form> 태그의 전송 장식을 post로 설정한다.
             frmLogin.method="post";
             // action 속성을 서블릿 매핑 이름인 login5로 설정
-            frmLogin.action="member.jsp";
+            frmLogin.action="/project04/mem.do";
             // 자바스크립트에서 서블릿으로 전송
             frmLogin.submit();
         }

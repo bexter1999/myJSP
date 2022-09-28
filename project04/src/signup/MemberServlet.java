@@ -75,7 +75,7 @@ public class MemberServlet extends HttpServlet{
 	                    +"<a href='/project04/sub04/signup?command=delMember&id="+id+"'>삭제</a></td></tr>");		 		
 		}
 		out.print("</table></body></html>");
-		out.print("<a href='/project04/sub04/sub04.html'>새 회원 등록하기</a>");
+		out.print("<a href='/project04/sub04/sub04.jsp'>새 회원 등록하기</a>");
 		
 	}
 }

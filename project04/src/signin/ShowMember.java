@@ -29,10 +29,10 @@ public class ShowMember extends HttpServlet{
 		        out.print("��й�ȣ: " + pwd +"<br>");
 		        out.print("</body></html>");				
 			} else {
-				response.sendRedirect("/project04/sub03/sub03.html");
+				response.sendRedirect("/project04/sub03/sub03.jsp");
 			}
 		}else{
-            response.sendRedirect("/project04/sub03/sub03.html");
+            response.sendRedirect("/project04/sub03/sub03.jsp");
         }
 	}
 }
