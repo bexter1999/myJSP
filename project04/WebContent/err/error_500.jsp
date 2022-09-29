@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>error 500</title>
-<link rel="stylesheet" href="err/css/style.css">
+<link rel="stylesheet" href="/project04/err/css/style.css">
 </head>
 <body>
 	<%@ include file="../main/header.jsp" %>

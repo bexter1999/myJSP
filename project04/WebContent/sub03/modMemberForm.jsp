@@ -1,15 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
       pageEncoding="UTF-8"
+     import="java.util.*,signin.*"
     isELIgnored="false" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>    
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<c:set var="contextPath" value="${pageContext.request.contextPath}"  />
 <%
   request.setCharacterEncoding("UTF-8");
 %> 
+<c:set var="contextPath" value="${pageContext.request.contextPath}"  />
 <head>
 <meta charset="UTF-8">
 <title>회원 정보 수정창</title>
+<link rel="shortcut icon" href="images/police-hat.ico">
+<link rel="stylesheet" href="/project04/sub03/css/style.css">
 <style>
   .cls1 {
      font-size:40px;
@@ -18,6 +21,7 @@
 </style>
 </head>
 <body>
+<%@ include file="../main/header.jsp" %>
  <h1 class="cls1">회원 정보 수정창</h1>
 <form  method="post" action="${contextPath}/member/modMember.do?id=${memInfo.id}">
  <table align="center" >
@@ -49,4 +53,6 @@
    </tr>
  </table>
 </form>
+<%@ include file="../main/footer.jsp" %>
+</body>
 </html>

@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>error 404</title>
-<link rel="stylesheet" href="err/css/style.css">
+<link rel="stylesheet" href="/project04/err/css/style.css">
 </head>
 <body>
 	<%@ include file="../main/header.jsp" %>
@@ -21,7 +21,7 @@
 			</div>
 		</div>
 	</section>
-	<img src="images/github.png" alt="404 이미지"/>
+	<img src="/project04/err/images/github.png" alt="404 이미지" width="1903" height="841"/>
 	<%@ include file="../main/footer.jsp" %>
 </body>
 </html>

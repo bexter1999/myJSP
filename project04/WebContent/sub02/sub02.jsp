@@ -12,7 +12,7 @@
 	<meta name="Description" content="권병석의 포트폴리오"/>
 
 	<link rel="shortcut icon" href="images/police-hat.ico">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/project04/sub02/css/style.css">
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/script.js"></script>
 </head>

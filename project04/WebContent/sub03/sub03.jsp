@@ -1,5 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"
+    import="java.util.*,signin.*"
+    isELIgnored="false" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>    
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%
+	request.setCharacterEncoding("UTF-8");
+%>  
+<c:set var="contextPath" value="${pageContext.request.contextPath}"  />  
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +22,7 @@
 	<meta name="Description" content="권병석의 포트폴리오"/>
     
 	<link rel="shortcut icon" href="images/police-hat.ico">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/project04/sub03/css/style.css">
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/script.js"></script>
 	<script>
