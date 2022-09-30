@@ -1,5 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"
+    isELIgnored="false" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>    
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="contextPath"  value="${pageContext.request.contextPath}"  />
+<%
+	request.setCharacterEncoding("UTF-8");
+%>  
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,6 +20,10 @@
 
 	<link rel="shortcut icon" href="images/police-hat.ico">
 	<link rel="stylesheet" href="/project04/sub01/css/style.css"/>
+<style>
+	.cls1 {text-decoration:none;}
+	.cls2{text-align:center; font-size:30px;}
+</style>	
 </head>
 <body>
 	<%@ include file="../main/header.jsp" %>
@@ -89,94 +100,51 @@
 				</div>
 			</div>
 		</div>
-        <div class="secBoard">
-			<div class="secBoardTitle">
-				<span class="secBoardTitleTextTurn">순번</span>
-				<span class="secBoardTitleTextTitle" >제목</span>
-				<span class="secBoardTitleTextWriter">등록자명</span>
-				<span class="secBoardTitleTextDate">등록일</span>
-				<span class="secBoardTitleTextViewNumber">조회수</span>
-			</div>
-			<div class="secBoardContents">
-				<div>
-					<div class="secBoardContentsNumber secBoardContentsFont">13529</div>
-					<div class="secBoardContentsTitle"><a href="../sub02/sub02.html">불철주야 안전지킴이 서초파출소 근무자님들께 감사 <img src="images/ico_new.gif" alt="새로운 글 표시" tabindex=""></a></div>
-					<div class="secBoardContentsName secBoardContentsFont">문**</div>
-					<div class="secBoardContentsDate secBoardContentsFont">2022-07-23</div>
-					<div class="secBoardContentsViewNumber secBoardContentsFont">15</div>
-				</div>
-				<div class="secBoardContents">
-					<div class="secBoardContentsNumber secBoardContentsFont">13528</div>
-					<div class="secBoardContentsTitle2"><a href="../sub03/sub03.html">경찰의 본분이 무엇인지 묻고 싶습니다. <img src="images/ico_new.gif" alt="새로운 글 표시" tabindex=""></a></div>
-					<div class="secBoardContentsFont">김**</div>
-					<div class="secBoardContentsDate secBoardContentsFont">2022-07-22</div>
-					<div class="secBoardContentsViewNumber secBoardContentsFont">12</div>
-				</div>
-				<div class="secBoardContents">
-					<div class="secBoardContentsNumber secBoardContentsFont">13527</div>
-					<div class="secBoardContentsTitle3"><a href="../sub02/sub02.html">경찰관 캠코더 <img src="images/ico_new.gif" alt="새로운 글 표시" tabindex=""></a></div>
-					<div class="secBoardContentsFont">박**</div>
-					<div class="secBoardContentsDate secBoardContentsFont">2022-07-22</div>
-					<div class="secBoardContentsViewNumber2 secBoardContentsFont">8</div>
-				</div>
-				<div class="secBoardContents">
-					<div class="secBoardContentsNumber secBoardContentsFont">13526</div>
-					<div class="secBoardContentsTitle4"><a href="../sub03/sub03.html">대림3동 파출소 칭찬합니다 <img src="images/ico_new.gif" alt="새로운 글 표시" tabindex=""></a></div>
-					<div class="secBoardContentsFont">박**</div>
-					<div class="secBoardContentsDate secBoardContentsFont">2022-07-22</div>
-					<div class="secBoardContentsViewNumber2 secBoardContentsFont">4</div>
-				</div>
-				<div class="secBoardContents">
-					<div class="secBoardContentsNumber secBoardContentsFont">13525</div>
-					<div class="secBoardContentsTitle5"><a href="../sub02/sub02.html">경찰관이 보는 이런 영상은 어떻게 생각하시나요 <img src="images/ico_new.gif" alt="새로운 글 표시" tabindex=""></a></div>
-					<div class="secBoardContentsFont">임**</div>
-					<div class="secBoardContentsDate secBoardContentsFont">2022-07-22</div>
-					<div class="secBoardContentsViewNumber secBoardContentsFont">12</div>
-				</div>
-				<div class="secBoardContents">
-					<div class="secBoardContentsNumber secBoardContentsFont">13524</div>
-					<div class="secBoardContentsTitle6"><a href="../sub03/sub03.html">경찰청장 님께 드리는 다소 사적인 질문. <img src="images/ico_new.gif" alt="새로운 글 표시" tabindex=""></a></div>
-					<div class="secBoardContentsFont">김**</div>
-					<div class="secBoardContentsDate secBoardContentsFont">2022-07-22</div>
-					<div class="secBoardContentsViewNumber2 secBoardContentsFont">8</div>
-				</div>
-				<div class="secBoardContents">
-					<div class="secBoardContentsNumber secBoardContentsFont">13523</div>
-					<div class="secBoardContentsTitle7"><a href="../sub02/sub02.html">Overview of V2k and intermediate reports. <img src="images/ico_new.gif" alt="새로운 글 표시" tabindex=""></a></div>
-					<div class="secBoardContentsFont">김**</div>
-					<div class="secBoardContentsDate secBoardContentsFont">2022-07-22</div>
-					<div class="secBoardContentsViewNumber2 secBoardContentsFont">4</div>
-				</div>
-				<div class="secBoardContents">
-					<div class="secBoardContentsNumber secBoardContentsFont">13522</div>
-					<div class="secBoardContentsTitle8"><a href="../sub03/sub03.html">V2k의 개요 및 중간보고. <img src="images/ico_new.gif" alt="새로운 글 표시" tabindex=""></a></div>
-					<div class="secBoardContentsFont">김**</div>
-					<div class="secBoardContentsDate secBoardContentsFont">2022-07-22</div>
-					<div class="secBoardContentsViewNumber2 secBoardContentsFont">2</div>
-				</div>
-				<div class="secBoardContents">
-					<div class="secBoardContentsNumber secBoardContentsFont">13521</div>
-					<div class="secBoardContentsTitle9"><a href="../sub02/sub02.html">모바일게임 "탱크 오브 블리츠"를 고발합니다 <img src="images/ico_new.gif" alt="새로운 글 표시" tabindex=""></a></div>
-					<div class="secBoardContentsFont">김**</div>
-					<div class="secBoardContentsDate secBoardContentsFont">2022-07-22</div>
-					<div class="secBoardContentsViewNumber2 secBoardContentsFont">4</div>
-				</div>
-				<div class="secBoardContents">
-					<div class="secBoardContentsNumber secBoardContentsFont">13520</div>
-					<div class="secBoardContentsTitle10"><a href="../sub03/sub03.html">인터넷 쇼핑몰 Aliexpress를 고발합니다. <img src="images/ico_new.gif" alt="새로운 글 표시" tabindex=""></a></div>
-					<div class="secBoardContentsFont">김**</div>
-					<div class="secBoardContentsDate secBoardContentsFont">2022-07-22</div>
-					<div class="secBoardContentsViewNumber2 secBoardContentsFont">3</div>
-				</div>
-			</div>
-		</div>
+		<table align="center" border="1"  width="80%"  >
+			<tr height="10" align="center"  bgcolor="lightgreen">
+				<td >글번호</td>
+				<td >작성자</td>              
+				<td >제목</td>
+				<td >작성일</td>
+			</tr>
+			<c:choose>
+				<c:when test="${empty articlesList }" >
+					<tr  height="10">
+						<td colspan="4">
+							<p align="center">
+								<b><span style="font-size:9pt;">등록된 글이 없습니다.</span></b>
+							</p>
+						</td>  
+					</tr>
+				</c:when>
+				<c:when test="${!empty articlesList}" >
+				    <c:forEach  var="article" items="${articlesList }" varStatus="articleNum" >
+					    <tr align="center">
+							<td width="5%">${articleNum.count}</td>
+							<td width="10%">${article.id }</td>
+							<td align='left'  width="35%">
+								<span style="padding-right:30px"></span>
+								<c:choose>
+									<c:when test='${article.level > 1 }'>  
+										<c:forEach begin="1" end="${article.level }" step="1">
+											<span style="padding-left:20px"></span>    
+										</c:forEach>
+										<span style="font-size:12px;">[답변]</span>
+										<a class='cls1' href="${contextPath}/board/viewArticle.do?articleNO=${article.articleNO}">${article.title}</a>
+									</c:when>
+									<c:otherwise>
+										<a class='cls1' href="${contextPath}/board/viewArticle.do?articleNO=${article.articleNO}">${article.title }</a>
+									</c:otherwise>
+								</c:choose>
+							</td>
+							<td  width="10%"><fmt:formatDate value="${article.writeDate}" /></td> 
+						</tr>
+				    </c:forEach>	
+				</c:when>
+			</c:choose>	
+		</table>
+		<a  class="cls1"  href="${contextPath}/sub01/articleForm.jsp"><p class="cls2">글쓰기</p></a>
         <div class="secPageNumber">
-			<form action="#" method=""> <!--post-->
-				<fieldset>
-					<button type="submit" class="myWriting" style="cursor:pointer;">나의 게시물 바로보기</button>
-					<button type="submit" class="Writing" style="cursor:pointer;">글쓰기</button>
-				</fieldset>
-			</form>
 			<div class="boardPageNumber fl cf">
 				<div class="boardPageNumber1 colorRed fl" OnClick="location.href ='#'" style="cursor:pointer;">1</div>
 				<div class="boardPageNumber2 fl" OnClick="location.href ='#'" style="cursor:pointer;">2</div>
