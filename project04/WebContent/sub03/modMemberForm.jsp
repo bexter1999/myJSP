@@ -48,11 +48,15 @@
      <td width="400"><input   type="text"  name="joinDate" value="${memInfo.joinDate }" disabled  ></td>
    </tr>
    <tr align="center" >
+   <h3></h3><br>
+	<h3></h3><br>
     <td colspan="2" width="400"><input type="submit" value="수정하기" >
        <input type="reset" value="다시입력" > </td>
    </tr>
  </table>
 </form>
+ <h3></h3><br>
+  <h3></h3><br>
 <%@ include file="../main/footer.jsp" %>
 </body>
 </html>

@@ -10,8 +10,8 @@
 <body>
 	<header id="header">
         <div class="headerTit cf">
-			<h1><span class="hidden">경찰청</span><a href="../index.html"><img src="images/mark.png" id="policeMainLogo" class="fl" alt="경찰청 메인 로고" tabindex=""></a>
-			<a href="../sub01/sub01.html"><img src="images/banner_taegeukgi.png" id="taegeukgi" class="fl" alt="태극기" tabindex=""></a></h1>
+			<h1><span class="hidden">경찰청</span><a href="../index.html"><img src="/project04/main/images/mark.png" id="policeMainLogo" class="fl" alt="경찰청 메인 로고" tabindex=""></a>
+			<a href="../sub01/sub01.html"><img src="/project04/main/images/banner_taegeukgi.png" id="taegeukgi" class="fl" alt="태극기" tabindex=""></a></h1>
 			<span><a href="../sub02/sub02.html" tabindex="" class="fl">국가상징<br/>알아보기</a></span>
 			<form action="#" method="get" class="fl">
 				<fieldset class="headerFieldSet">
@@ -34,7 +34,7 @@
 		</div>
         <div class="headerMenu">
 			<div class="menu">
-				<a href="../sub02/sub02.html"><img src="images/menu.png" id="headerMenuBtn" alt="메뉴 버튼" tabindex=""></a>
+				<a href="../sub02/sub02.html"><img src="/project04/main/images/menu.png" id="headerMenuBtn" alt="메뉴 버튼" tabindex=""></a>
 				<div class="nav cf">
 					<div class="menuTit news"><a href="../sub01/sub01.html" title="알림/소식" tabindex=""><h2><span>알림/소식</span></h2></a>
 						<div class="twoInner">

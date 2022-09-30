@@ -63,27 +63,27 @@
 		 	<td width="7%" ><b>삭제</b></td>
 		</tr>
 		<c:choose>
-			<c:when test="${empty membersList }">
-				<tr>
-					<td colspan=5 align="center">
-						<b>등록된 회원이 없습니다.</b>
-					</td>
-				</tr>
-			</c:when>
-			<c:when test="${!empty membersList }">
-				<c:forEach var="mem" items="${membersList }">
-					<tr align="center">
-						<td>${mem.id }</td>
-						<td>${mem.pwd }</td>
-						<td>${mem.name }</td>
-						<td>${mem.email }</td>
-						<td>${mem.joinDate }</td>
-						<td><a href="${contextPath}/member/modMemberForm.do?id=${mem.id }">수정</a></td>
-		   				<td><a href="${contextPath}/member/delMember.do?id=${mem.id }">삭제</a></td>
-					</tr>
-				</c:forEach>
-			</c:when>
-		</c:choose>
+    <c:when test="${empty  membersList}" >
+      <tr>
+        <td colspan=5>
+          <b>등록된 회원이 없습니다.</b>
+       </td>  
+      </tr>
+   </c:when>  
+   <c:when test="${!empty membersList}" >
+      <c:forEach  var="mem" items="${membersList }" >
+        <tr align="center">
+          <td>${mem.id }</td>
+          <td>${mem.pwd }</td>
+          <td>${mem.name}</td>     
+          <td>${mem.email }</td>     
+          <td>${mem.joinDate}</td>
+          <td><a href="${contextPath}/member/modMemberForm.do?id=${mem.id }">수정</a></td>
+		   <td><a href="${contextPath}/member/delMember.do?id=${mem.id }">삭제</a></td> 
+       </tr>
+     </c:forEach>
+</c:when>
+</c:choose>
 	</table>
 	<a href="#"><p class="cls2">회원 가입하기</p></a>
 	<%@ include file="../main/footer.jsp" %>

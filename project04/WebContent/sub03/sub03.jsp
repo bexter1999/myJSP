@@ -93,10 +93,10 @@
 			<div class="secLoginBoxR">
 				<form class="secLoginBoxForm" method="post" name="frmLogin" encType="UTF-8">
 					<label for="idBox">
-						<input type="text" id="idBox" name="user_id" class="guideText" value="이용자 ID">
+						<input type="text" id="idBox" name="user_id" class="guideText" value="admin">
 					</label>
 					<label for="passwordBox">
-						<input type="password" id="passwordBox" name="user_pwd" class="guideText" value="비밀번호">
+						<input type="password" id="passwordBox" name="user_pwd" class="guideText" value="admin">
 					</label>	
 					<input type="button" onClick="fn_validate()" class="idLoginBtn" value="로그인" style="cursor:pointer">
 				</form>

@@ -15,7 +15,7 @@
 					<div class="fl" OnClick="location.href ='../sub02/sub02.html'" style="cursor:pointer;">시·도 경찰청 누리집</div>
 					<div class="fl" OnClick="location.href ='../sub01/sub01.html'" style="cursor:pointer;">부속기관 누리집</div>
 					<div class="fl" OnClick="location.href ='../sub02/sub02.html'" style="cursor:pointer;">연계기관 누리집</div>
-					<a href="sub03.html" class="fl"><img src="images/up.png" class="footerNuriImg" alt="페이지 상단으로 올라가기" tabindex=""></a>
+					<a href="sub03.html" class="fl"><img src="/project04/main/images/up.png" class="footerNuriImg" alt="페이지 상단으로 올라가기" tabindex=""></a>
 				</div>
 			</div>
 		</div>
@@ -43,8 +43,8 @@
 					</div>
 				</div>
 				<div class="footerValidityImg">
-					<a href="../sub01/sub01.html"><img src="images/footer_webwatch.png" id="webWatch" alt="WebAccessibility" tabindex=""></a>
-					<a href="../sub02/sub02.html"><img src="images/footer_eprivacy.png" id="ePrivacy" alt="ePrivacy" tabindex=""></a>
+					<a href="../sub01/sub01.html"><img src="/project04/main/images/footer_webwatch.png" id="webWatch" alt="WebAccessibility" tabindex=""></a>
+					<a href="../sub02/sub02.html"><img src="/project04/main/images/footer_eprivacy.png" id="ePrivacy" alt="ePrivacy" tabindex=""></a>
 				</div>
 			</div>
 		</div>	
