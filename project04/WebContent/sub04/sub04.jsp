@@ -36,7 +36,7 @@
 				// 전송 방법을 post로 지정
 				frmMember.method="post";
 				// 서블릿 매핑 이름을 member3으로 지정
-				frmMember.action="signup";
+				frmMember.action="/project04/index.jsp";
 				// 서블릿으로 전송
 				frmMember.submit();
 			}
