@@ -49,7 +49,7 @@ public class MemberDAO {
 				vo.setJoinDate(joinDate);
 				list.add(vo);				
 			}
-			rs.close(); //DB는 항상 닫아줘야됨
+			rs.close(); 
 			pstmt.close();
 			con.close();			
 		} catch (Exception e) {
@@ -65,9 +65,8 @@ public class MemberDAO {
 			String pwd = memberVO.getPwd();
 			String name = memberVO.getName();
 			String email = memberVO.getEmail();
-			//insert into t_member "001, 100, 오윤석, ashram7, 영업부"
 			String query = "insert into t_member";
-			query += " (id,pwd,name,email)"; //앞에 일부러 한캄 띄워씀 붙이면 오류 남 
+			query += " (id,pwd,name,email)";
 			query += " values(?,?,?,?)";
 			System.out.println("prepareStatement: " + query);
 			pstmt = con.prepareStatement(query);
@@ -103,16 +102,13 @@ public class MemberDAO {
 		String pwd = memberVO.getPwd();		
 		try {
 			con = dataFactory.getConnection();
-			//decode() 함수를 이용해 id와 pwd가 존재하면 true, 존재하지 않으면 false를 return
 			String query = "select decode(count(*),1,'true','false') as result from t_member";
 			query += " where id=? and pwd=?";
 			System.out.println(query);
-			//파라메터로 전달된 id와 pwd를 이용해 데이터베이스에 있는지 조회
 			pstmt = con.prepareStatement(query);
 			pstmt.setString(1, id);
 			pstmt.setString(2, pwd);	
 			ResultSet rs = pstmt.executeQuery();
-			//커서를 첫번째 레코드로 위치시킵니다.
 			rs.next(); 
 			result = Boolean.parseBoolean(rs.getString("result"));
 			System.out.println("result=" + result);			
