@@ -56,7 +56,7 @@ public class MemberController extends HttpServlet {
 			RequestDispatcher dispatch = request.getRequestDispatcher("/sub03/listMembers.jsp");
 			dispatch.forward(request, response); 
 			} else { 
-				response.sendRedirect("/project04/index.jsp"); //나중에 로그인된 페이지 넣기
+				response.sendRedirect("/project04/indexLogin.jsp"); //나중에 로그인된 페이지 넣기
 			}
 		} else {
 			out.print("<html><body>회원 아이디가 틀립니다.");
