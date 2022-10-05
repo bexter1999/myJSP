@@ -1,5 +1,5 @@
 package signup;
-
+//회원가입
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;

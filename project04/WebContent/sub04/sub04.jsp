@@ -37,7 +37,7 @@
 				frmMember.method="post";
 				// 서블릿 매핑 이름을 member3으로 지정
 				frmMember.action="signup";
-				// 서블릿으로 전송
+				// 서블릿으로 전송함
 				frmMember.submit();
 			}
 		}
