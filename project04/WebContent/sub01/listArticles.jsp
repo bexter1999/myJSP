@@ -19,11 +19,11 @@
 </head>
 <body>
 <table align="center" border="1"  width="80%"  >
-	<tr height="10" align="center"  bgcolor="lightgreen">
-		<td >글번호</td>
-		<td >작성자</td>              
-		<td >제목</td>
-		<td >작성일</td>
+	<tr height="10" align="center" bgcolor="#004fa8">
+		<td>글번호</td>
+		<td>작성자</td>              
+		<td>제목</td>
+		<td>작성일</td>
 	</tr>
 <c:choose>
 	<c:when test="${empty articlesList }" >

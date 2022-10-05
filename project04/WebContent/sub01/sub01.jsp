@@ -18,7 +18,7 @@
 	<meta name="Keywords" content="권병석, 병석, 병석 권, Kwon ByeongSeok, ByeongSeok, Kwon, 포트폴리오, 권병석 포트폴리오, portfolio, ByeongSeok's portfolio, 프로젝트, 프로젝트 페이지, 퍼블리싱"/>
 	<meta name="Description" content="권병석의 포트폴리오"/>
 
-	<link rel="shortcut icon" href="images/police-hat.ico">
+	<link rel="shortcut icon" href="/project04/sub01/images/police-hat.ico">
 	<link rel="stylesheet" href="/project04/sub01/css/style.css"/>
 <style>
 	.cls1 {text-decoration:none;}
@@ -30,12 +30,12 @@
 	<section id="section">
 		<div class="secBoardLinkBox">
 			<div class="secBoardLink cf">
-				<a href="../index.html"><img src="images/home.PNG" alt="홈 버튼" tabindex=""></a>
+				<a href="../index.html"><img src="/project04/sub01/images/home.PNG" alt="홈 버튼" tabindex=""></a>
 				<div class="secBoardLinkText" OnClick="location.href ='../sub02/sub02.html'" style="cursor:pointer;">소통/공감 ></div>
 				<div class="secBoardLinkText" OnClick="location.href ='../sub03/sub03.html'" style="cursor:pointer;">소통게시판 ></div>
 				<div class="secBoardLinkText bgGray" OnClick="location.href ='sub01.html'" style="cursor:pointer;">자유게시판</div>
-				<a href="#"><img src="images/link.png" id="link" alt="링크" tabindex=""></a>
-				<a href="#"><img src="images/print.PNG" id="print" alt="프린트" tabindex=""></a>
+				<a href="#"><img src="/project04/sub01/images/link.png" id="link" alt="링크" tabindex=""></a>
+				<a href="#"><img src="/project04/sub01/images/print.PNG" id="print" alt="프린트" tabindex=""></a>
 			</div>
 		</div>
         <div class="secSearchBox">
@@ -101,11 +101,11 @@
 			</div>
 		</div>
 		<table align="center" border="1"  width="80%"  >
-			<tr height="10" align="center"  bgcolor="lightgreen">
-				<td >글번호</td>
-				<td >작성자</td>              
-				<td >제목</td>
-				<td >작성일</td>
+			<tr height="10" align="center" bgcolor="#04264c">
+				<td style="color:white"><b>글번호</b></td>
+				<td style="color:white"><b>작성자</b></td>              
+				<td style="color:white"><b>제목</b></td>
+				<td style="color:white"><b>작성일</b></td>
 			</tr>
 			<c:choose>
 				<c:when test="${empty articlesList }" >
@@ -143,7 +143,8 @@
 				</c:when>
 			</c:choose>	
 		</table>
-		<a  class="cls1"  href="${contextPath}/sub01/articleForm.jsp"><p class="cls2">글쓰기</p></a>
+		<br>
+		<a  class="cls1"  href="${contextPath}/sub01/articleForm.jsp"><p class="cls2" color="#555555">글쓰기</p></a>
         <div class="secPageNumber">
 			<div class="boardPageNumber fl cf">
 				<div class="boardPageNumber1 colorRed fl" OnClick="location.href ='#'" style="cursor:pointer;">1</div>

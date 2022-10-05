@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>error 500</title>
+<link rel="shortcut icon" href="/project04/sub01/images/police-hat.ico">
 <link rel="stylesheet" href="/project04/err/css/style.css">
 </head>
 <body>

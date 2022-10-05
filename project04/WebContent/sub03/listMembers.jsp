@@ -51,16 +51,20 @@
 </head>
 <body>
 	<%@ include file="../main/header.jsp" %>
+	<br>
+	<br>
 	<p class="cls1">회원정보</p>
+	<br>
+	<br>
 	<table align="center" border="1">
-		<tr align="center" bgcolor="lightgreen">
-			<td width="7%"><b>아이디</b></td>
-			<td width="7%"><b>비밀번호</b></td>
-			<td width="7%"><b>이름</b></td>
-			<td width="7%"><b>이메일</b></td>
-			<td width="7%"><b>가입일</b></td>
-			<td width="7%" ><b>수정</b></td>
-		 	<td width="7%" ><b>삭제</b></td>
+		<tr align="center" bgcolor="#04264c">
+			<td width="7%" style="color:white"><b>아이디</b></td>
+			<td width="7%" style="color:white"><b>비밀번호</b></td>
+			<td width="7%" style="color:white"><b>이름</b></td>
+			<td width="7%" style="color:white"><b>이메일</b></td>
+			<td width="7%" style="color:white"><b>가입일</b></td>
+			<td width="3%" style="color:white"><b>수정</b></td>
+		 	<td width="3%" style="color:white"><b>삭제</b></td>
 		</tr>
 		<c:choose>
     <c:when test="${empty  membersList}" >
@@ -85,7 +89,11 @@
 </c:when>
 </c:choose>
 	</table>
-	<a href="#"><p class="cls2">회원 가입하기</p></a>
+	<br>
+	<br>
+	<a href="/project04/sub04/sub04.jsp"><p class="cls2">회원 가입하기</p></a>
+	<br>
+	<br>
 	<%@ include file="../main/footer.jsp" %>
 </body>
 </html>
