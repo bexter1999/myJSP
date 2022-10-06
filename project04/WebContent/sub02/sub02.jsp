@@ -21,24 +21,24 @@
 	<section id="section">
         <div class="secBoardLinkBox">
 			<div class="secBoardLink cf">
-				<a href="../index.html"><img src="images/home.PNG" alt="홈 버튼" tabindex=""></a>
-				<div class="secBoardLinkText" OnClick="location.href ='../sub01/sub01.html'" style="cursor:pointer;">소통/공감 ></div>
-				<div class="secBoardLinkText" OnClick="location.href ='../sub03/sub03.html'" style="cursor:pointer;">소통게시판 ></div>
-				<div class="secBoardLinkText bgGray" OnClick="location.href ='../sub01/sub01.html'" style="cursor:pointer;">자유게시판</div>
-				<a href="../sub03/sub03.html"><img src="images/link.png" id="link" alt="링크" tabindex=""></a>
-				<a href="../sub01/sub01.html"><img src="images/print.PNG" id="print" alt="프린트" tabindex=""></a>
+				<a href="../index.jsp"><img src="images/home.PNG" alt="홈 버튼" tabindex=""></a>
+				<div class="secBoardLinkText" OnClick="location.href ='/project04/board/listArticles.do'" style="cursor:pointer;">소통/공감 ></div>
+				<div class="secBoardLinkText" OnClick="location.href ='../sub03/sub03.jsp'" style="cursor:pointer;">소통게시판 ></div>
+				<div class="secBoardLinkText bgGray" OnClick="location.href ='/project04/board/listArticles.do'" style="cursor:pointer;">자유게시판</div>
+				<a href="../sub03/sub03.jsp"><img src="images/link.png" id="link" alt="링크" tabindex=""></a>
+				<a href="/project04/board/listArticles.do"><img src="images/print.PNG" id="print" alt="프린트" tabindex=""></a>
 			</div>
 		</div>
         <div class="secSearchBox">
             <div class="secSearchBoxT">
                 <div class="clameQna"><h2>민원 FAQ</h2></div>
                 <div class="clameQnaIndex">
-                    <div class="fl clameQnaAll clameQnaBox " OnClick="location.href ='../sub03/sub03.html'" style="cursor:pointer;">전체</div>
-                    <div class="fl clameQnaSafe clameQnaBox" OnClick="location.href ='../sub01/sub01.html'" style="cursor:pointer;">생활안전</div>
-                    <div class="fl clameQnaTraffic clameQnaBox" OnClick="location.href ='../sub03/sub03.html'" style="cursor:pointer;">교통</div>
-                    <div class="fl clameQnaDetective clameQnaBox" OnClick="location.href ='../sub01/sub01.html'" style="cursor:pointer;">수사 ‧ 형사</div>
-                    <div class="fl clameQnaWoman clameQnaBox" OnClick="location.href ='../sub03/sub03.html'" style="cursor:pointer;">여성청소년</div>
-                    <div class="fl clameQnaLife clameQnaBox" OnClick="location.href ='../sub01/sub01.html'" style="cursor:pointer;">생활민원</div>
+                    <div class="fl clameQnaAll clameQnaBox " OnClick="location.href ='../sub03/sub03.jsp'" style="cursor:pointer;">전체</div>
+                    <div class="fl clameQnaSafe clameQnaBox" OnClick="location.href ='/project04/board/listArticles.do'" style="cursor:pointer;">생활안전</div>
+                    <div class="fl clameQnaTraffic clameQnaBox" OnClick="location.href ='../sub03/sub03.jsp'" style="cursor:pointer;">교통</div>
+                    <div class="fl clameQnaDetective clameQnaBox" OnClick="location.href ='/project04/board/listArticles.do'" style="cursor:pointer;">수사 ‧ 형사</div>
+                    <div class="fl clameQnaWoman clameQnaBox" OnClick="location.href ='../sub03/sub03.jsp'" style="cursor:pointer;">여성청소년</div>
+                    <div class="fl clameQnaLife clameQnaBox" OnClick="location.href ='/project04/board/listArticles.do'" style="cursor:pointer;">생활민원</div>
                 </div>
             </div>
             <div class="secSearchBoxM">

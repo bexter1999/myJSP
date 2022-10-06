@@ -70,7 +70,7 @@
 					더 자세한 안내가 필요하시면 bexter125@naver.com으로 연락주세요.
 					<br>
 				</p>
-				<a href="sub01/sub01.html" class="popUpInnerLink"><span>민원센터 바로가기</span></a>
+				<a href="/project04/board/listArticles.do" class="popUpInnerLink"><span>민원센터 바로가기</span></a>
 				<button class="pCloseBtn" style="cursor: pointer;">닫기</button>
 				<label class="todayClose"><input type="checkbox" name="오늘 하루 열지 않음" value="on"> 오늘 하루 열지 않음</label>
 			</div>
@@ -78,28 +78,28 @@
 	</div>
 	<div class="quickToggle"></div>
 	<div class="quickMenu">
-		<a href="index.html" class="toolTip" title="경찰청"><img src="images/sidebarlogo2.png" alt="사이드바 로고"/></a>
+		<a href="index.jsp" class="toolTip" title="경찰청"><img src="images/sidebarlogo2.png" alt="사이드바 로고"/></a>
 		<ul>
-			<li class="toolTip" title="경찰공제회"><a href="sub01/sub01.html" tabindex="">경찰공제회</a></li>
-			<li class="toolTip" title="경찰복지포털"><a href="sub02/sub02.html" tabindex="">경찰복지포털</a></li>
-			<li class="toolTip" title="경찰전자우편(웹메일)"><a href="sub03/sub03.html" tabindex="">경찰전자우편(웹메일)</a></li>
-			<li class="toolTip" title="자료이동서비스"><a href="sub01/sub01.html" tabindex="">자료이동서비스</a></li>
-			<li class="toolTip" title="내부비리신고"><a href="sub02/sub02.html" tabindex="">내부비리신고</a></li>
-			<li class="toolTip" title="경찰사이버교육포털"><a href="sub03/sub03.html" tabindex="">경찰사이버교육포털</a></li>
-			<li class="toolTip" title="저작권정책"><a href="sub01/sub01.html" tabindex="">저작권정책</a></li>
-			<li class="toolTip" title="이용안내"><a href="sub02/sub02.html" tabindex="">이용안내</a></li>
-			<li class="toolTip" title="정부·지자체 조직도"><a href="sub03/sub03.html" tabindex="">정부·지자체 조직도</a></li>
+			<li class="toolTip" title="경찰공제회"><a href="/project04/board/listArticles.do" tabindex="">경찰공제회</a></li>
+			<li class="toolTip" title="경찰복지포털"><a href="sub02/sub02.jsp" tabindex="">경찰복지포털</a></li>
+			<li class="toolTip" title="경찰전자우편(웹메일)"><a href="sub03/sub03.jsp" tabindex="">경찰전자우편(웹메일)</a></li>
+			<li class="toolTip" title="자료이동서비스"><a href="/project04/board/listArticles.do" tabindex="">자료이동서비스</a></li>
+			<li class="toolTip" title="내부비리신고"><a href="sub02/sub02.jsp" tabindex="">내부비리신고</a></li>
+			<li class="toolTip" title="경찰사이버교육포털"><a href="sub03/sub03.jsp" tabindex="">경찰사이버교육포털</a></li>
+			<li class="toolTip" title="저작권정책"><a href="/project04/board/listArticles.do" tabindex="">저작권정책</a></li>
+			<li class="toolTip" title="이용안내"><a href="sub02/sub02.jsp" tabindex="">이용안내</a></li>
+			<li class="toolTip" title="정부·지자체 조직도"><a href="sub03/sub03.jsp" tabindex="">정부·지자체 조직도</a></li>
 		</ul>
 		<ul class="quickMenuBtm">
-			<li class="quickMenuLogin toolTip" title="로그인"><a href="sub03/sub03.html" tabindex="">로그인</a></li>
-			<li class="quickMenuSignUp toolTip" title="회원가입"><a href="sub03/sub03.html" tabindex="">회원가입</a></li>
+			<li class="quickMenuLogin toolTip" title="로그인"><a href="sub03/sub03.jsp" tabindex="">로그인</a></li>
+			<li class="quickMenuSignUp toolTip" title="회원가입"><a href="sub03/sub03.jsp" tabindex="">회원가입</a></li>
 		</ul>
 	</div>
     <header id="header">
         <div class="headerT cf">
-			<a href="sub01/sub01.html" tabindex="1"><img src="images/banner_taegeukgi.png" id="taegeukgi" alt="태극기" width="55" height="35" title="태극기" class="toolTip" tabindex=""></a>
-			<div class="tggText fl"><a href="sub02/sub02.html" title="국가상징 알아보기" class="toolTip" tabindex="2">국가상징<br>&nbsp;&nbsp;알아보기</a></div>
-			<a href="index.html" title="경찰청" class="toolTip" tabindex="3"><img src="images/big_logo.png" id="policeLogo" alt="경찰청 탑 로고" width="210" height="60" tabindex=""><h1>경찰청</h1></a>
+			<a href="/project04/board/listArticles.do" tabindex="1"><img src="images/banner_taegeukgi.png" id="taegeukgi" alt="태극기" width="55" height="35" title="태극기" class="toolTip" tabindex=""></a>
+			<div class="tggText fl"><a href="sub02/sub02.jsp" title="국가상징 알아보기" class="toolTip" tabindex="2">국가상징<br>&nbsp;&nbsp;알아보기</a></div>
+			<a href="index.jsp" title="경찰청" class="toolTip" tabindex="3"><img src="images/big_logo.png" id="policeLogo" alt="경찰청 탑 로고" width="210" height="60" tabindex=""><h1>경찰청</h1></a>
 			<form action="#" method="get" class="searchBox fl">
 				<fieldset class="searchBoxFieldset">
 					<label for="searchT">
@@ -117,210 +117,210 @@
 				<li class="enImage"><a href="index.jsp?lo=en"><img src="/project04/images/en.png"></a></li>
 			</ul> 
 			<div class="userName">
-				[ 환영합니다 @@@님! ]
+				[ 환영합니다 사용자님! ]
 			</div>
 		</div>
         <div class="headerM cf">
             <div class="menu">
-				<a href="sub01/sub01.html" title="메뉴 버튼" class="toolTip" tabindex="6"><img src="images/menuButton.png" id="menuButton" alt="menuButton" width="45" height="45" tabindex=""></a>
+				<a href="/project04/board/listArticles.do" title="메뉴 버튼" class="toolTip" tabindex="6"><img src="images/menuButton.png" id="menuButton" alt="menuButton" width="45" height="45" tabindex=""></a>
                 <nav class="nav cf">
-					<div class="menuTit"><a href="sub02/sub02.html" title="알림/소식" class="toolTip" tabindex="7"><h2><span><fmt:message key="mem.onedepth1" /></span></h2></a>
+					<div class="menuTit"><a href="sub02/sub02.jsp" title="알림/소식" class="toolTip" tabindex="7"><h2><span><fmt:message key="mem.onedepth1" /></span></h2></a>
 						<div class="twoInner">
 							<div class="twoDepth cf">
 								<ul class="menuML">
-									<li class="menuSTit"><a href="sub01/sub01.html"  tabindex="14"><fmt:message key="mem.twodepth1Title1" /></a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="18">- <fmt:message key="mem.twodepth1Text1" /></a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="19">- <fmt:message key="mem.twodepth1Text2" /></a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="20">- <fmt:message key="mem.twodepth1Text3" /></a></li>
-									<li class="menuSText"><a href="sub03/sub01.html" tabindex="21">- <fmt:message key="mem.twodepth1Text4" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.html" tabindex="22">- <fmt:message key="mem.twodepth1Text5" /></a></li>
+									<li class="menuSTit"><a href="/project04/board/listArticles.do"  tabindex="14"><fmt:message key="mem.twodepth1Title1" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.jsp" tabindex="18">- <fmt:message key="mem.twodepth1Text1" /></a></li>
+									<li class="menuSText"><a href="/project04/board/listArticles.do" tabindex="19">- <fmt:message key="mem.twodepth1Text2" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.jsp" tabindex="20">- <fmt:message key="mem.twodepth1Text3" /></a></li>
+									<li class="menuSText"><a href="sub03/sub01.jsp" tabindex="21">- <fmt:message key="mem.twodepth1Text4" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.jsp" tabindex="22">- <fmt:message key="mem.twodepth1Text5" /></a></li>
                                 </ul>
                                 <ul> 
-									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="15"><fmt:message key="mem.twodepth1Title2" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.html" tabindex="23">- <fmt:message key="mem.twodepth1Text6" /></a></li>
+									<li class="menuSTit"><a href="sub02/sub02.jsp" tabindex="15"><fmt:message key="mem.twodepth1Title2" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.jsp" tabindex="23">- <fmt:message key="mem.twodepth1Text6" /></a></li>
                                 </ul>
                                 <ul>     
-									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="16"><fmt:message key="mem.twodepth1Title3" /></a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="24">- <fmt:message key="mem.twodepth1Text7" /></a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="25">- <fmt:message key="mem.twodepth1Text8" /></a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="26">- <fmt:message key="mem.twodepth1Text9" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="27">- <fmt:message key="mem.twodepth1Text10" /></a></li>
+									<li class="menuSTit"><a href="sub03/sub03.jsp" tabindex="16"><fmt:message key="mem.twodepth1Title3" /></a></li>
+									<li class="menuSText"><a href="/project04/board/listArticles.do" tabindex="24">- <fmt:message key="mem.twodepth1Text7" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.jsp" tabindex="25">- <fmt:message key="mem.twodepth1Text8" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.jsp" tabindex="26">- <fmt:message key="mem.twodepth1Text9" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="/project04/board/listArticles.do" tabindex="27">- <fmt:message key="mem.twodepth1Text10" /></a></li>
                                 </ul>    
                                 <ul>
-									<li class="menuSTit"><a href="sub01/sub01.html" tabindex="17"><fmt:message key="mem.twodepth1Title4" /></a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="28">- <fmt:message key="mem.twodepth1Text11" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.html" tabindex="29">- <fmt:message key="mem.twodepth1Text12" /></a></li>
+									<li class="menuSTit"><a href="/project04/board/listArticles.do" tabindex="17"><fmt:message key="mem.twodepth1Title4" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.jsp" tabindex="28">- <fmt:message key="mem.twodepth1Text11" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.jsp" tabindex="29">- <fmt:message key="mem.twodepth1Text12" /></a></li>
 								</ul>
 							</div>
 						</div>		
 					</div>
-					<div class="menuTit"><a href="sub03/sub03.html" title="소통/공감" class="toolTip" tabindex="8"><h2><span><fmt:message key="mem.onedepth2" /></span></h2></a>
+					<div class="menuTit"><a href="sub03/sub03.jsp" title="소통/공감" class="toolTip" tabindex="8"><h2><span><fmt:message key="mem.onedepth2" /></span></h2></a>
 						<div class="twoInner">
 							<div class="twoDepth cf">
                                 <ul class="menuML">        
-									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="30"><fmt:message key="mem.twodepth2Title1" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="34">- <fmt:message key="mem.twodepth2Text1" /></a></li>
+									<li class="menuSTit"><a href="sub02/sub02.jsp" tabindex="30"><fmt:message key="mem.twodepth2Title1" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="/project04/board/listArticles.do" tabindex="34">- <fmt:message key="mem.twodepth2Text1" /></a></li>
                                 </ul> 
                                 <ul>        
-									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="31"><fmt:message key="mem.twodepth2Title2" /></a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="35">- <fmt:message key="mem.twodepth2Text2" /></a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="36">- <fmt:message key="mem.twodepth2Text3" /></a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="37">- <fmt:message key="mem.twodepth2Text4" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.html" tabindex="38">- <fmt:message key="mem.twodepth2Text5" /></a></li>
+									<li class="menuSTit"><a href="sub03/sub03.jsp" tabindex="31"><fmt:message key="mem.twodepth2Title2" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.jsp" tabindex="35">- <fmt:message key="mem.twodepth2Text2" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.jsp" tabindex="36">- <fmt:message key="mem.twodepth2Text3" /></a></li>
+									<li class="menuSText"><a href="/project04/board/listArticles.do" tabindex="37">- <fmt:message key="mem.twodepth2Text4" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.jsp" tabindex="38">- <fmt:message key="mem.twodepth2Text5" /></a></li>
                                 </ul> 
                                 <ul>       
-									<li class="menuSTit"><a href="sub01/sub01.html" tabindex="32"><fmt:message key="mem.twodepth2Title3" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="39">- <fmt:message key="mem.twodepth2Text6" /></a></li>
+									<li class="menuSTit"><a href="/project04/board/listArticles.do" tabindex="32"><fmt:message key="mem.twodepth2Title3" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="/project04/board/listArticles.do" tabindex="39">- <fmt:message key="mem.twodepth2Text6" /></a></li>
                                 </ul>
                                 <ul>      
-									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="33"><fmt:message key="mem.twodepth2Title4" /></a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="40">- <fmt:message key="mem.twodepth2Text7" /></a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="41">- <fmt:message key="mem.twodepth2Text8" /></a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="42">- <fmt:message key="mem.twodepth2Text9" /></a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="43">- <fmt:message key="mem.twodepth2Text10" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.html" tabindex="44">- <fmt:message key="mem.twodepth2Text11" /></a></li>
+									<li class="menuSTit"><a href="sub02/sub02.jsp" tabindex="33"><fmt:message key="mem.twodepth2Title4" /></a></li>
+									<li class="menuSText"><a href="/project04/board/listArticles.do" tabindex="40">- <fmt:message key="mem.twodepth2Text7" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.jsp" tabindex="41">- <fmt:message key="mem.twodepth2Text8" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.jsp" tabindex="42">- <fmt:message key="mem.twodepth2Text9" /></a></li>
+									<li class="menuSText"><a href="/project04/board/listArticles.do" tabindex="43">- <fmt:message key="mem.twodepth2Text10" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.jsp" tabindex="44">- <fmt:message key="mem.twodepth2Text11" /></a></li>
 								</ul>
 							</div>	
 						</div>	
 					</div>
-					<div class="menuTit"><a href="sub01/sub01.html" title="신고/지원" class="toolTip" tabindex="9"><h2><span><fmt:message key="mem.onedepth3" /></span></h2></a>
+					<div class="menuTit"><a href="/project04/board/listArticles.do" title="신고/지원" class="toolTip" tabindex="9"><h2><span><fmt:message key="mem.onedepth3" /></span></h2></a>
 						<div class="twoInner">
 							<div class="twoDepth cf">
 								<ul class="menuML">
-									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="45"><fmt:message key="mem.twodepth3Title1" /></a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="50">- <fmt:message key="mem.twodepth3Text1" /></a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="51">- <fmt:message key="mem.twodepth3Text2" /></a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="52">- <fmt:message key="mem.twodepth3Text3" /></a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="53">- <fmt:message key="mem.twodepth3Text4" /></a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="54">- <fmt:message key="mem.twodepth3Text5" /></a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="55">- <fmt:message key="mem.twodepth3Text6" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.html" tabindex="56">- <fmt:message key="mem.twodepth3Text7" /></a></li>
+									<li class="menuSTit"><a href="sub03/sub03.jsp" tabindex="45"><fmt:message key="mem.twodepth3Title1" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.jsp" tabindex="50">- <fmt:message key="mem.twodepth3Text1" /></a></li>
+									<li class="menuSText"><a href="/project04/board/listArticles.do" tabindex="51">- <fmt:message key="mem.twodepth3Text2" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.jsp" tabindex="52">- <fmt:message key="mem.twodepth3Text3" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.jsp" tabindex="53">- <fmt:message key="mem.twodepth3Text4" /></a></li>
+									<li class="menuSText"><a href="/project04/board/listArticles.do" tabindex="54">- <fmt:message key="mem.twodepth3Text5" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.jsp" tabindex="55">- <fmt:message key="mem.twodepth3Text6" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.jsp" tabindex="56">- <fmt:message key="mem.twodepth3Text7" /></a></li>
                                 </ul>
                                 <ul>    
-									<li class="menuSTit"><a href="sub01/sub01.html" tabindex="46"><fmt:message key="mem.twodepth3Title2" /></a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="57">- <fmt:message key="mem.twodepth3Text8" /></a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="58">- <fmt:message key="mem.twodepth3Text9" /></a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="59">- <fmt:message key="mem.twodepth3Text10" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="60">- <fmt:message key="mem.twodepth3Text11" /></a></li>
+									<li class="menuSTit"><a href="/project04/board/listArticles.do" tabindex="46"><fmt:message key="mem.twodepth3Title2" /></a></li>
+									<li class="menuSText"><a href="/project04/board/listArticles.do" tabindex="57">- <fmt:message key="mem.twodepth3Text8" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.jsp" tabindex="58">- <fmt:message key="mem.twodepth3Text9" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.jsp" tabindex="59">- <fmt:message key="mem.twodepth3Text10" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="/project04/board/listArticles.do" tabindex="60">- <fmt:message key="mem.twodepth3Text11" /></a></li>
                                 </ul>
                                 <ul>
-									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="47"><fmt:message key="mem.twodepth3Title3" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.html" tabindex="61">- <fmt:message key="mem.twodepth3Text12" /></a></li>
+									<li class="menuSTit"><a href="sub02/sub02.jsp" tabindex="47"><fmt:message key="mem.twodepth3Title3" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.jsp" tabindex="61">- <fmt:message key="mem.twodepth3Text12" /></a></li>
                                 </ul>
                                 <ul>
-									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="48"><fmt:message key="mem.twodepth3Title4" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.html" tabindex="62">- <fmt:message key="mem.twodepth3Text13" /></a></li>
+									<li class="menuSTit"><a href="sub03/sub03.jsp" tabindex="48"><fmt:message key="mem.twodepth3Title4" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.jsp" tabindex="62">- <fmt:message key="mem.twodepth3Text13" /></a></li>
                                 </ul>
                                 <ul>
-									<li class="menuSTit"><a href="sub01/sub01.html" tabindex="49"><fmt:message key="mem.twodepth3Title5" /></a></li>
+									<li class="menuSTit"><a href="/project04/board/listArticles.do" tabindex="49"><fmt:message key="mem.twodepth3Title5" /></a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="menuTit"><a href="sub02/sub02.html" title="정보공개" class="toolTip" tabindex="10"><h2><span><fmt:message key="mem.onedepth4" /></span></h2></a>
+					<div class="menuTit"><a href="sub02/sub02.jsp" title="정보공개" class="toolTip" tabindex="10"><h2><span><fmt:message key="mem.onedepth4" /></span></h2></a>
 						<div class="twoInner">		
 							<div class="twoDepth cf">
 								<ul class="menuML">
-									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="63"><fmt:message key="mem.twodepth4Title1" /></a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="67">- <fmt:message key="mem.twodepth4Text1" /></a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="68">- <fmt:message key="mem.twodepth4Text2" /></a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="69">- <fmt:message key="mem.twodepth4Text3" /></a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="70">- <fmt:message key="mem.twodepth4Text4" /></a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="71">- <fmt:message key="mem.twodepth4Text5" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.html" tabindex="72">- <fmt:message key="mem.twodepth4Text6" /></a></li>
+									<li class="menuSTit"><a href="sub02/sub02.jsp" tabindex="63"><fmt:message key="mem.twodepth4Title1" /></a></li>
+									<li class="menuSText"><a href="/project04/board/listArticles.do" tabindex="67">- <fmt:message key="mem.twodepth4Text1" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.jsp" tabindex="68">- <fmt:message key="mem.twodepth4Text2" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.jsp" tabindex="69">- <fmt:message key="mem.twodepth4Text3" /></a></li>
+									<li class="menuSText"><a href="/project04/board/listArticles.do" tabindex="70">- <fmt:message key="mem.twodepth4Text4" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.jsp" tabindex="71">- <fmt:message key="mem.twodepth4Text5" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.jsp" tabindex="72">- <fmt:message key="mem.twodepth4Text6" /></a></li>
                                 </ul>
                                 <ul> 
-									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="64"><fmt:message key="mem.twodepth4Title2" /></a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="73">- <fmt:message key="mem.twodepth4Text7" /></a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="74">- <fmt:message key="mem.twodepth4Text8" /></a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="75">- <fmt:message key="mem.twodepth4Text9" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="76">- <fmt:message key="mem.twodepth4Text10" /></a></li>
+									<li class="menuSTit"><a href="sub03/sub03.jsp" tabindex="64"><fmt:message key="mem.twodepth4Title2" /></a></li>
+									<li class="menuSText"><a href="/project04/board/listArticles.do" tabindex="73">- <fmt:message key="mem.twodepth4Text7" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.jsp" tabindex="74">- <fmt:message key="mem.twodepth4Text8" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.jsp" tabindex="75">- <fmt:message key="mem.twodepth4Text9" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="/project04/board/listArticles.do" tabindex="76">- <fmt:message key="mem.twodepth4Text10" /></a></li>
                                 </ul>
                                 <ul>
-									<li class="menuSTit"><a href="sub01/sub01.html" tabindex="65"><fmt:message key="mem.twodepth4Title3" /></a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="77">- <fmt:message key="mem.twodepth4Text11" /></a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="78">- <fmt:message key="mem.twodepth4Text12" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="79">- <fmt:message key="mem.twodepth4Text13" /></a></li>
+									<li class="menuSTit"><a href="/project04/board/listArticles.do" tabindex="65"><fmt:message key="mem.twodepth4Title3" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.jsp" tabindex="77">- <fmt:message key="mem.twodepth4Text11" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.jsp" tabindex="78">- <fmt:message key="mem.twodepth4Text12" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="/project04/board/listArticles.do" tabindex="79">- <fmt:message key="mem.twodepth4Text13" /></a></li>
                                 </ul>
                                 <ul>
-									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="66"><fmt:message key="mem.twodepth4Title4" /></a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="80">- <fmt:message key="mem.twodepth4Text14" /></a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="81">- <fmt:message key="mem.twodepth4Text15" /></a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="82">- <fmt:message key="mem.twodepth4Text16" /></a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="83">- <fmt:message key="mem.twodepth4Text17" /></a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="84">- <fmt:message key="mem.twodepth4Text18" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="85">- <fmt:message key="mem.twodepth4Text19" /></a></li>
+									<li class="menuSTit"><a href="sub02/sub02.jsp" tabindex="66"><fmt:message key="mem.twodepth4Title4" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.jsp" tabindex="80">- <fmt:message key="mem.twodepth4Text14" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.jsp" tabindex="81">- <fmt:message key="mem.twodepth4Text15" /></a></li>
+									<li class="menuSText"><a href="/project04/board/listArticles.do" tabindex="82">- <fmt:message key="mem.twodepth4Text16" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.jsp" tabindex="83">- <fmt:message key="mem.twodepth4Text17" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.jsp" tabindex="84">- <fmt:message key="mem.twodepth4Text18" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="/project04/board/listArticles.do" tabindex="85">- <fmt:message key="mem.twodepth4Text19" /></a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="menuTit"><a href="sub03/sub03.html" title="법령/정책" class="toolTip" tabindex="11"><h2><span><fmt:message key="mem.onedepth5" /></span></h2></a>
+					<div class="menuTit"><a href="sub03/sub03.jsp" title="법령/정책" class="toolTip" tabindex="11"><h2><span><fmt:message key="mem.onedepth5" /></span></h2></a>
 						<div class="twoInner">
 							<div class="twoDepth cf">
 								<ul class="menuML">
-									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="86"><fmt:message key="mem.twodepth5Title1" /></a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="89">- <fmt:message key="mem.twodepth5Text1" /></a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="90">- <fmt:message key="mem.twodepth5Text2" /></a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="91">- <fmt:message key="mem.twodepth5Text3" /></a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="92">- <fmt:message key="mem.twodepth5Text4" /></a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="93">- <fmt:message key="mem.twodepth5Text5" /></a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="94">- <fmt:message key="mem.twodepth5Text6" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.html" tabindex="95">- <fmt:message key="mem.twodepth5Text7" /></a></li>
+									<li class="menuSTit"><a href="sub03/sub03.jsp" tabindex="86"><fmt:message key="mem.twodepth5Title1" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.jsp" tabindex="89">- <fmt:message key="mem.twodepth5Text1" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.jsp" tabindex="90">- <fmt:message key="mem.twodepth5Text2" /></a></li>
+									<li class="menuSText"><a href="/project04/board/listArticles.do" tabindex="91">- <fmt:message key="mem.twodepth5Text3" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.jsp" tabindex="92">- <fmt:message key="mem.twodepth5Text4" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.jsp" tabindex="93">- <fmt:message key="mem.twodepth5Text5" /></a></li>
+									<li class="menuSText"><a href="/project04/board/listArticles.do" tabindex="94">- <fmt:message key="mem.twodepth5Text6" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.jsp" tabindex="95">- <fmt:message key="mem.twodepth5Text7" /></a></li>
                                 </ul>
                                 <ul>
-									<li class="menuSTit"><a href="sub01/sub01.html" tabindex="87"><fmt:message key="mem.twodepth5Title2" /></a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="96">- <fmt:message key="mem.twodepth5Text8" /></a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="97">- <fmt:message key="mem.twodepth5Text9" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.html" tabindex="98">- <fmt:message key="mem.twodepth5Text10" /></a></li>
+									<li class="menuSTit"><a href="/project04/board/listArticles.do" tabindex="87"><fmt:message key="mem.twodepth5Title2" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.jsp" tabindex="96">- <fmt:message key="mem.twodepth5Text8" /></a></li>
+									<li class="menuSText"><a href="/project04/board/listArticles.do" tabindex="97">- <fmt:message key="mem.twodepth5Text9" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.jsp" tabindex="98">- <fmt:message key="mem.twodepth5Text10" /></a></li>
                                 </ul>
                                 <ul>
-									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="88"><fmt:message key="mem.twodepth5Title3" /></a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="99">- <fmt:message key="mem.twodepth5Text11" /></a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="100">- <fmt:message key="mem.twodepth5Text12" /></a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="101">- <fmt:message key="mem.twodepth5Text13" /></a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="102">- <fmt:message key="mem.twodepth5Text14" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="103">- <fmt:message key="mem.twodepth5Text15" /></a></li>
+									<li class="menuSTit"><a href="sub02/sub02.jsp" tabindex="88"><fmt:message key="mem.twodepth5Title3" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.jsp" tabindex="99">- <fmt:message key="mem.twodepth5Text11" /></a></li>
+									<li class="menuSText"><a href="/project04/board/listArticles.do" tabindex="100">- <fmt:message key="mem.twodepth5Text12" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.jsp" tabindex="101">- <fmt:message key="mem.twodepth5Text13" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.jsp" tabindex="102">- <fmt:message key="mem.twodepth5Text14" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="/project04/board/listArticles.do" tabindex="103">- <fmt:message key="mem.twodepth5Text15" /></a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="menuTit"><a href="sub01/sub01.html" title="기관소개" class="toolTip" tabindex="12"><h2><span><fmt:message key="mem.onedepth6" /></span></h2></a>
+					<div class="menuTit"><a href="/project04/board/listArticles.do" title="기관소개" class="toolTip" tabindex="12"><h2><span><fmt:message key="mem.onedepth6" /></span></h2></a>
 						<div class="twoInner">		
 							<div class="twoDepth cf">
 								<ul class="menuML">
-									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="104"><fmt:message key="mem.twodepth6Title1" /></a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="108">- <fmt:message key="mem.twodepth6Text1" /></a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="109">- <fmt:message key="mem.twodepth6Text2" /></a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="110">- <fmt:message key="mem.twodepth6Text3" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.html" tabindex="111">- <fmt:message key="mem.twodepth6Text4" /></a></li>
+									<li class="menuSTit"><a href="sub03/sub03.jsp" tabindex="104"><fmt:message key="mem.twodepth6Title1" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.jsp" tabindex="108">- <fmt:message key="mem.twodepth6Text1" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.jsp" tabindex="109">- <fmt:message key="mem.twodepth6Text2" /></a></li>
+									<li class="menuSText"><a href="/project04/board/listArticles.do" tabindex="110">- <fmt:message key="mem.twodepth6Text3" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub02/sub02.jsp" tabindex="111">- <fmt:message key="mem.twodepth6Text4" /></a></li>
                                 </ul>
                                 <ul>
-									<li class="menuSTit"><a href="sub01/sub01.html" tabindex="105"><fmt:message key="mem.twodepth6Title2" /></a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="112">- <fmt:message key="mem.twodepth6Text5" /></a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="113">- <fmt:message key="mem.twodepth6Text6" /></a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="114">- <fmt:message key="mem.twodepth6Text7" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.html" tabindex="115">- <fmt:message key="mem.twodepth6Text8" /></a></li>
+									<li class="menuSTit"><a href="/project04/board/listArticles.do" tabindex="105"><fmt:message key="mem.twodepth6Title2" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.jsp" tabindex="112">- <fmt:message key="mem.twodepth6Text5" /></a></li>
+									<li class="menuSText"><a href="/project04/board/listArticles.do" tabindex="113">- <fmt:message key="mem.twodepth6Text6" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.jsp" tabindex="114">- <fmt:message key="mem.twodepth6Text7" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.jsp" tabindex="115">- <fmt:message key="mem.twodepth6Text8" /></a></li>
                                 </ul>
                                 <ul>
-									<li class="menuSTit"><a href="sub02/sub02.html" tabindex="106"><fmt:message key="mem.twodepth6Title3" /></a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="116">- <fmt:message key="mem.twodepth6Text9" /></a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="117">- <fmt:message key="mem.twodepth6Text10" /></a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="118">- <fmt:message key="mem.twodepth6Text11" /></a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="119">- <fmt:message key="mem.twodepth6Text12" /></a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="120">- <fmt:message key="mem.twodepth6Text13" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.html" tabindex="121">- <fmt:message key="mem.twodepth6Text14" /></a></li>
+									<li class="menuSTit"><a href="sub02/sub02.jsp" tabindex="106"><fmt:message key="mem.twodepth6Title3" /></a></li>
+									<li class="menuSText"><a href="/project04/board/listArticles.do" tabindex="116">- <fmt:message key="mem.twodepth6Text9" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.jsp" tabindex="117">- <fmt:message key="mem.twodepth6Text10" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.jsp" tabindex="118">- <fmt:message key="mem.twodepth6Text11" /></a></li>
+									<li class="menuSText"><a href="/project04/board/listArticles.do" tabindex="119">- <fmt:message key="mem.twodepth6Text12" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.jsp" tabindex="120">- <fmt:message key="mem.twodepth6Text13" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="sub03/sub03.jsp" tabindex="121">- <fmt:message key="mem.twodepth6Text14" /></a></li>
                                 </ul>
                                 <ul>
-									<li class="menuSTit"><a href="sub03/sub03.html" tabindex="107"><fmt:message key="mem.twodepth6Title4" /></a></li>
-									<li class="menuSText"><a href="sub01/sub01.html" tabindex="122">- <fmt:message key="mem.twodepth6Text15" /></a></li>
-									<li class="menuSText"><a href="sub02/sub02.html" tabindex="123">- <fmt:message key="mem.twodepth6Text16" /></a></li>
-									<li class="menuSText"><a href="sub03/sub03.html" tabindex="124">- <fmt:message key="mem.twodepth6Text17" /></a></li>
-									<li class="menuSText twoDepthPaddingBtm"><a href="sub01/sub01.html" tabindex="125">- <fmt:message key="mem.twodepth6Text18" /></a></li>
+									<li class="menuSTit"><a href="sub03/sub03.jsp" tabindex="107"><fmt:message key="mem.twodepth6Title4" /></a></li>
+									<li class="menuSText"><a href="/project04/board/listArticles.do" tabindex="122">- <fmt:message key="mem.twodepth6Text15" /></a></li>
+									<li class="menuSText"><a href="sub02/sub02.jsp" tabindex="123">- <fmt:message key="mem.twodepth6Text16" /></a></li>
+									<li class="menuSText"><a href="sub03/sub03.jsp" tabindex="124">- <fmt:message key="mem.twodepth6Text17" /></a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="/project04/board/listArticles.do" tabindex="125">- <fmt:message key="mem.twodepth6Text18" /></a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="menuTit englishMenu"><a href="sub02/sub02.html" title="ENGLISH" class="toolTip" tabindex="13"><h2>ENGLISH</h2></a></div>	
+					<div class="menuTit englishMenu"><a href="sub02/sub02.jsp" title="ENGLISH" class="toolTip" tabindex="13"><h2>ENGLISH</h2></a></div>	
                 </nav>
             </div>
         </div>

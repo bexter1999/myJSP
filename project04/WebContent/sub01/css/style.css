@@ -16,14 +16,13 @@ a{text-decoration: none;}
 	.headerMenu{width: 100%; height: 80px;}
 	.headerImg{width: 100%; height: 208px;}
 
-#section{width: 100%; height: 1262px;}
+#section{width: 100%; height: 1100px;}
 	.secBoardLinkBox{width:100%; height: 58px;}
 		.secBoardLink{width: 1419px; height: 58px;}
 	.secSearchBox{width: 1420px; height: 412px;}
 		.secSearchBoxT{width: 1420px; height: 234px;}
 		.secSearchBoxM{width: 1420px; height: 83px;}
-		.secSearchBoxB{width: 1420px; height: 95px;}
-	.secBoard{width: 1420px; height: 563px;}
+		.secSearchBoxB{width: 1420px; height: 95px;}  
 	.secPageNumber{width: 1420px; height: 229px;}
 
 #footer{width: 100%; height: 283px;}

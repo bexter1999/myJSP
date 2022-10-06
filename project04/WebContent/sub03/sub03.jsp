@@ -51,12 +51,12 @@
 	<section id="section">
 		<div class="secLoginLinkBox">
 			<div class="secLoginLink">
-				<a href="../index.html"><img src="images/home.PNG" alt="홈 버튼" tabindex=""></a>
-				<div class="secLoginLinkText" OnClick="location.href ='../sub01/sub01.html'" style="cursor:pointer;">메뉴 ></div>
-				<div class="secLoginLinkText" OnClick="location.href ='sub03.html'" style="cursor:pointer;">로그인 / 비밀번호</div>
-				<div class="secLoginLinkText bgGray" OnClick="location.href ='sub03.html'" style="cursor:pointer;">로그인</div>
-				<a href="../sub01/sub01.html"><img src="images/link.png" id="link" alt="링크" tabindex=""></a>
-				<a href="../sub02/sub02.html"><img src="images/print.PNG" id="print" alt="프린트" tabindex=""></a>
+				<a href="../index.jsp"><img src="images/home.PNG" alt="홈 버튼" tabindex=""></a>
+				<div class="secLoginLinkText" OnClick="location.href ='/project04/board/listArticles.do'" style="cursor:pointer;">메뉴 ></div>
+				<div class="secLoginLinkText" OnClick="location.href ='sub03.jsp'" style="cursor:pointer;">로그인 / 비밀번호</div>
+				<div class="secLoginLinkText bgGray" OnClick="location.href ='sub03.jsp'" style="cursor:pointer;">로그인</div>
+				<a href="/project04/board/listArticles.do"><img src="images/link.png" id="link" alt="링크" tabindex=""></a>
+				<a href="../sub02/sub02.jsp"><img src="images/print.PNG" id="print" alt="프린트" tabindex=""></a>
 			</div>
 		</div>
 		<div class="secLoginWarning">
@@ -74,8 +74,8 @@
 		</div>
 		<div class="secLoginBox">
 			<div class="secLoginBoxL">
-				<div class="certificateGY"><a href="sub03.html" tabindex="">공인인증서 로그인</a></div>
-				<div class="certificateGD"><a href="sub03.html" tabindex="">공동인증서 로그인 <span>(구 공인인증서)</span></a></div>
+				<div class="certificateGY"><a href="sub03.jsp" tabindex="">공인인증서 로그인</a></div>
+				<div class="certificateGD"><a href="sub03.jsp" tabindex="">공동인증서 로그인 <span>(구 공인인증서)</span></a></div>
 				<form action="#" method="post" class="certificateForm">
 					<label for="use" class="certificateAutoPopup">인증서 자동 팝업
 						<input type="radio" id="use" name="certificate"> 사용
@@ -85,9 +85,9 @@
 					</label>
 				</form>
 				<div class="secLoginBoxLSpanBox">
-					<span class="secLoginBoxLSpanBR secLoginBoxLSpanML secLoginBoxLPR"><a href="sub03.html">인증서발급/재발급</a></span>
-					<span class="secLoginBoxLSpanBR secLoginBoxLPR secLoginBoxLPL"><a href="sub03.html">타 인증서 등록</a></span>
-					<span class="secLoginBoxLPL"><a href="sub03.html">인증센터</a></span>
+					<span class="secLoginBoxLSpanBR secLoginBoxLSpanML secLoginBoxLPR"><a href="sub03.jsp">인증서발급/재발급</a></span>
+					<span class="secLoginBoxLSpanBR secLoginBoxLPR secLoginBoxLPL"><a href="sub03.jsp">타 인증서 등록</a></span>
+					<span class="secLoginBoxLPL"><a href="sub03.jsp">인증센터</a></span>
 				</div>
 			</div>
 			<div class="secLoginBoxR">
@@ -102,9 +102,9 @@
 				</form>
 				<div class="secLoginBoxRC">
 					<div class="secLoginBoxRCBox">
-						<span class="secLoginBoxRCBR"><a href="sub03.html" tabindex="">아이디 찾기</a></span>
-						<span class="secLoginBoxRCBR pdL"><a href="sub03.html" tabindex="">비밀번호 재설정</a></span>
-						<span><a href="sub03.html" tabindex="" class="pdL">회원가입</a></span>
+						<span class="secLoginBoxRCBR"><a href="sub03.jsp" tabindex="">아이디 찾기</a></span>
+						<span class="secLoginBoxRCBR pdL"><a href="sub03.jsp" tabindex="">비밀번호 재설정</a></span>
+						<span><a href="/project04/sub04/sub04.jsp" tabindex="" class="pdL">회원가입</a></span>
 					</div>
 				</div>
 			</div>
@@ -129,10 +129,10 @@
 			<div class="secLoginServiceL">
 				<div>자주묻는질문</div>
 				<ul>
-					<li class="pdT10"><a href="../sub01/sub01.html" tabindex="">- 경찰청 신규 가입했습니다. 인증서 발급은 어떻게 하나요?</a></li>
-					<li><a href="../sub02/sub02.html" tabindex="">- 타기관에서 발급된 공동인증서(구 공인인증서)가 있는경우 어떻게 해…</a></li>
-					<li><a href="../sub01/sub01.html" tabindex="">- 통합프로그램 설치안내</a></li>
-					<li><a href="../sub02/sub02.html" tabindex="">- 경찰청 이용시 유의할 사항이 있나요?</a></li>
+					<li class="pdT10"><a href="/project04/board/listArticles.do" tabindex="">- 경찰청 신규 가입했습니다. 인증서 발급은 어떻게 하나요?</a></li>
+					<li><a href="../sub02/sub02.jsp" tabindex="">- 타기관에서 발급된 공동인증서(구 공인인증서)가 있는경우 어떻게 해…</a></li>
+					<li><a href="/project04/board/listArticles.do" tabindex="">- 통합프로그램 설치안내</a></li>
+					<li><a href="../sub02/sub02.jsp" tabindex="">- 경찰청 이용시 유의할 사항이 있나요?</a></li>
 				</ul>
 			</div>
 			<div class="secLoginServiceR">

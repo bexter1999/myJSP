@@ -11,22 +11,22 @@
 		<div class="footerNuriBox">
 			<div class="footerNuri">
 				<div>
-					<div class="buserNuri fl" OnClick="location.href ='../sub01/sub01.html'" style="cursor:pointer;">부서별 누리집</div>
-					<div class="fl" OnClick="location.href ='../sub02/sub02.html'" style="cursor:pointer;">시·도 경찰청 누리집</div>
-					<div class="fl" OnClick="location.href ='../sub01/sub01.html'" style="cursor:pointer;">부속기관 누리집</div>
-					<div class="fl" OnClick="location.href ='../sub02/sub02.html'" style="cursor:pointer;">연계기관 누리집</div>
-					<a href="sub03.html" class="fl"><img src="/project04/main/images/up.png" class="footerNuriImg" alt="페이지 상단으로 올라가기" tabindex=""></a>
+					<div class="buserNuri fl" OnClick="location.href ='/project04/board/listArticles.do'" style="cursor:pointer;">부서별 누리집</div>
+					<div class="fl" OnClick="location.href ='../sub02/sub02.jsp'" style="cursor:pointer;">시·도 경찰청 누리집</div>
+					<div class="fl" OnClick="location.href ='/project04/board/listArticles.do'" style="cursor:pointer;">부속기관 누리집</div>
+					<div class="fl" OnClick="location.href ='../sub02/sub02.jsp'" style="cursor:pointer;">연계기관 누리집</div>
+					<a href="sub03.jsp" class="fl"><img src="/project04/main/images/up.png" class="footerNuriImg" alt="페이지 상단으로 올라가기" tabindex=""></a>
 				</div>
 			</div>
 		</div>
 		<div class="footerPolicyBox">
 			<div class="footerPolicy">
-				<div><a href="../sub01/sub01.html" class="privacyPolicy">개인정보처리방침</a></div>
-				<div><a href="../sub02/sub02.html" class="copyRightPolicy">저작권정책</a></div>
-				<div><a href="../sub01/sub01.html" class="publicData">공공데이터 이용정책</a></div>
-				<div><a href="../sub02/sub02.html" class="documentDownload">문서 보기 프로그램 내려받기</a></div>
-				<div><a href="../sub01/sub01.html" class="guide">이용안내</a></div>
-				<div><a href="../sub02/sub02.html" class="organization">정부·지자체 조직도</a></div>
+				<div><a href="/project04/board/listArticles.do" class="privacyPolicy">개인정보처리방침</a></div>
+				<div><a href="../sub02/sub02.jsp" class="copyRightPolicy">저작권정책</a></div>
+				<div><a href="/project04/board/listArticles.do" class="publicData">공공데이터 이용정책</a></div>
+				<div><a href="../sub02/sub02.jsp" class="documentDownload">문서 보기 프로그램 내려받기</a></div>
+				<div><a href="/project04/board/listArticles.do" class="guide">이용안내</a></div>
+				<div><a href="../sub02/sub02.jsp" class="organization">정부·지자체 조직도</a></div>
 			</div>
 		</div>
 		<div class="footerAddressBox">
@@ -43,8 +43,8 @@
 					</div>
 				</div>
 				<div class="footerValidityImg">
-					<a href="../sub01/sub01.html"><img src="/project04/main/images/footer_webwatch.png" id="webWatch" alt="WebAccessibility" tabindex=""></a>
-					<a href="../sub02/sub02.html"><img src="/project04/main/images/footer_eprivacy.png" id="ePrivacy" alt="ePrivacy" tabindex=""></a>
+					<a href="/project04/board/listArticles.do"><img src="/project04/main/images/footer_webwatch.png" id="webWatch" alt="WebAccessibility" tabindex=""></a>
+					<a href="../sub02/sub02.jsp"><img src="/project04/main/images/footer_eprivacy.png" id="ePrivacy" alt="ePrivacy" tabindex=""></a>
 				</div>
 			</div>
 		</div>	

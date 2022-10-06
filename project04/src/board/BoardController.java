@@ -65,7 +65,7 @@ public class BoardController extends HttpServlet {
 				String content = articleMap.get("content");
 				String imageFileName = articleMap.get("imageFileName");
 				articleVO.setParentNO(0);
-				articleVO.setId("hong");
+				articleVO.setId("yuuri");
 				articleVO.setTitle(title);
 				articleVO.setContent(content);
 				articleVO.setImageFileName(imageFileName);

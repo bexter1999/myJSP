@@ -30,10 +30,10 @@
 	<section id="section">
 		<div class="secBoardLinkBox">
 			<div class="secBoardLink cf">
-				<a href="../index.html"><img src="/project04/sub01/images/home.PNG" alt="홈 버튼" tabindex=""></a>
-				<div class="secBoardLinkText" OnClick="location.href ='../sub02/sub02.html'" style="cursor:pointer;">소통/공감 ></div>
-				<div class="secBoardLinkText" OnClick="location.href ='../sub03/sub03.html'" style="cursor:pointer;">소통게시판 ></div>
-				<div class="secBoardLinkText bgGray" OnClick="location.href ='sub01.html'" style="cursor:pointer;">자유게시판</div>
+				<a href="../index.jsp"><img src="/project04/sub01/images/home.PNG" alt="홈 버튼" tabindex=""></a>
+				<div class="secBoardLinkText" OnClick="location.href ='../sub02/sub02.jsp'" style="cursor:pointer;">소통/공감 ></div>
+				<div class="secBoardLinkText" OnClick="location.href ='../sub03/sub03.jsp'" style="cursor:pointer;">소통게시판 ></div>
+				<div class="secBoardLinkText bgGray" OnClick="location.href ='sub01.jsp'" style="cursor:pointer;">자유게시판</div>
 				<a href="#"><img src="/project04/sub01/images/link.png" id="link" alt="링크" tabindex=""></a>
 				<a href="#"><img src="/project04/sub01/images/print.PNG" id="print" alt="프린트" tabindex=""></a>
 			</div>
@@ -43,7 +43,7 @@
 				<div class="freeBoard"><h2>자유게시판</h2></div>
 				<div class="freeBoard-Text">자유게시판은 자요로운 의견을 남기는 공간으로 민원관련 답변은 드리지 않습니다.</div>
 				<div class="freeBoard-Text">민원관련 문의사항은 국민신문고와 연계된 "경찰민원포털"을 이용해주시기 바랍니다.</div>
-				<div class="policeClamePortal"><a href="../sub02/sub02.html" tabindex="">경찰민원포털 바로가기</a></div>
+				<div class="policeClamePortal"><a href="../sub02/sub02.jsp" tabindex="">경찰민원포털 바로가기</a></div>
 			</div>
 			<div class="secSearchBoxM">
 				<form action="#" method="get">
