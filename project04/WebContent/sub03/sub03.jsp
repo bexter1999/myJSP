@@ -96,7 +96,7 @@
 						<input type="text" id="idBox" name="user_id" class="guideText" value="admin">
 					</label>
 					<label for="passwordBox">
-						<input type="password" id="passwordBox" name="user_pwd" class="guideText" value="admin">
+						<input type="password" id="passwordBox" name="user_pwd" class="guideText" value="ay2111!!">
 					</label>	
 					<input type="button" onClick="fn_validate()" class="idLoginBtn" value="로그인" style="cursor:pointer">
 				</form>

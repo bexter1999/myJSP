@@ -113,8 +113,8 @@
 				 <a href="/project04/index.jsp" title="로그인" class="toolTip" tabindex="5">Logout ▶</a>
 			</div>
 			<ul> 
- 	 			<li class="koImage"><a href="index.jsp?lo=ko"><img src="/project04/images/ko.png"></a></li>
-				<li class="enImage"><a href="index.jsp?lo=en"><img src="/project04/images/en.png"></a></li>
+ 	 			<li class="koImage"><a href="indexLogin.jsp?lo=ko"><img src="/project04/images/ko.png"></a></li>
+				<li class="enImage"><a href="indexLogin.jsp?lo=en"><img src="/project04/images/en.png"></a></li>
 			</ul> 
 			<div class="userName">
 				[ 환영합니다 사용자님! ]
