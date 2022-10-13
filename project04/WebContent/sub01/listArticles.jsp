@@ -102,11 +102,11 @@
 			</div>
 		</div>
 <table align="center" border="1"  width="80%"  >
-  <tr height="10" align="center"  bgcolor="lightgreen">
-     <td >글번호</td>
-     <td >작성자</td>              
-     <td >제목</td>
-     <td >작성일</td>
+  <tr height="10" align="center"  bgcolor="#04264c">
+     <td style="color:white"><b>글번호</b></td>
+     <td style="color:white"><b>작성자</b></td>              
+     <td style="color:white"><b>제목</b></td>
+     <td style="color:white"><b>작성일</b></td>
   </tr>
 <c:choose>
   <c:when test="${empty articlesList}" >
@@ -144,7 +144,7 @@
      </c:when>
     </c:choose>
 </table>
-
+<br>
 <div class="cls2">
  <c:if test="${totArticles != null }" >
       <c:choose>
