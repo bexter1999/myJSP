@@ -145,22 +145,6 @@
 		</table>
 		<br>
 		<a  class="cls1"  href="${contextPath}/sub01/articleForm.jsp"><p class="cls2" color="#555555">글쓰기</p></a>
-        <div class="secPageNumber">
-			<div class="boardPageNumber fl cf">
-				<div class="boardPageNumber1 colorRed fl" OnClick="location.href ='#'" style="cursor:pointer;">1</div>
-				<div class="boardPageNumber2 fl" OnClick="location.href ='#'" style="cursor:pointer;">2</div>
-				<div class="boardPageNumber3 fl" OnClick="location.href ='#'" style="cursor:pointer;">3</div>
-				<div class="boardPageNumber4 fl" OnClick="location.href ='#'" style="cursor:pointer;">4</div>
-				<div class="boardPageNumber5 fl" OnClick="location.href ='#'" style="cursor:pointer;">5</div>
-				<div class="boardPageNumber6 fl" OnClick="location.href ='#'" style="cursor:pointer;">6</div>
-				<div class="boardPageNumber7 fl" OnClick="location.href ='#'" style="cursor:pointer;">7</div>
-				<div class="boardPageNumber8 fl" OnClick="location.href ='#'" style="cursor:pointer;">8</div>
-				<div class="boardPageNumber9 fl" OnClick="location.href ='#'" style="cursor:pointer;">9</div>
-				<div class="boardPageNumber10 boardPageNumberBR fl" OnClick="location.href ='#'" style="cursor:pointer;">10</div>
-				<div class="boardPageNumber11 fl" OnClick="location.href ='#'" style="cursor:pointer;"> ></div>
-				<div class="boardPageNumber12 boardPageNumberBR fl" OnClick="location.href ='#'" style="cursor:pointer;">>></div>
-			</div>	
-		</div>
     </section>
 	<%@ include file="../main/footer.jsp" %>
 </body>

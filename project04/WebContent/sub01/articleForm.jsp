@@ -1,10 +1,10 @@
-	<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
      pageEncoding="UTF-8"
     isELIgnored="false" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>    
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
-	request.setCharacterEncoding("UTF-8");
+  request.setCharacterEncoding("UTF-8");
 %> 
 <c:set var="contextPath"  value="${pageContext.request.contextPath}"  /> 
 <head>
@@ -12,7 +12,6 @@
 <title>글쓰기창</title>
 <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript">
-	//제이쿼리를 이용해서 이미지 파일 첨부시 미리보기 기능을 구현
    function readURL(input) {
       if (input.files && input.files[0]) {
 	      var reader = new FileReader();
@@ -32,7 +31,7 @@
 <body>
 <h1 style="text-align:center">새글 쓰기</h1>
   <form name="articleForm" method="post"   action="${contextPath}/board/addArticle.do"   enctype="multipart/form-data">
-    <table border=0 align="center">
+    <table border="0" align="center">
      <tr>
 	   <td align="right">글제목: </td>
 	   <td colspan="2"><input type="text" size="67"  maxlength="500" name="title" /></td>
