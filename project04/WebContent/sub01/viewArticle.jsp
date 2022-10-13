@@ -80,7 +80,7 @@
   <form name="frmArticle" method="post"  action="${contextPath}"  enctype="multipart/form-data">
   <table  border=0  align="center">
   <tr>
-   <td width=150 align="center" bgcolor=#FF9933>
+   <td width=150 align="center" bgcolor=#04264c style="color:white">
       글번호
    </td>
    <td >
@@ -89,7 +89,7 @@
    </td>
   </tr>
   <tr>
-    <td width="150" align="center" bgcolor="#FF9933">
+    <td width="150" align="center" bgcolor="#04264c" style="color:white">
       작성자 아이디
    </td>
    <td >
@@ -97,7 +97,7 @@
    </td>
   </tr>
   <tr>
-    <td width="150" align="center" bgcolor="#FF9933">
+    <td width="150" align="center" bgcolor="#04264c" style="color:white">
       제목 
    </td>
    <td>
@@ -105,7 +105,7 @@
    </td>   
   </tr>
   <tr>
-    <td width="150" align="center" bgcolor="#FF9933">
+    <td width="150" align="center" bgcolor="#04264c" style="color:white">
       내용
    </td>
    <td>
@@ -115,7 +115,7 @@
  
 <c:if test="${not empty article.imageFileName && article.imageFileName!='null' }">  
 <tr>
-    <td width="150" align="center" bgcolor="#FF9933"  rowspan="2">
+    <td width="150" align="center" bgcolor="#04264c"  style="color:white" rowspan="2">
       이미지
    </td>
    <td>
@@ -131,7 +131,7 @@
   </tr>
  </c:if>
   <tr>
-	   <td width="150" align="center" bgcolor="#FF9933">
+	   <td width="150" align="center" bgcolor="#04264c" style="color:white">
 	      등록일자
 	   </td>
 	   <td>

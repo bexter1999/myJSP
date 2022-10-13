@@ -16,7 +16,7 @@ a{text-decoration: none;}
 	.headerMenu{width: 100%; height: 80px;}
 	.headerImg{width: 100%; height: 208px;}
 
-#section{width: 100%; height: 950px;}
+#section{width: 100%; height: 1100px;}
 	.secBoardLinkBox{width:100%; height: 58px;}
 		.secBoardLink{width: 1419px; height: 58px;}
 	.secSearchBox{width: 1420px; height: 412px;}
@@ -146,7 +146,12 @@ fieldset{border: none;}
 	.boardPageNumber{margin-left: 492px; margin-top: 30px;}
 	.boardPageNumber10{margin-right: 30px;}
 	.boardPageNumberBR{border-right: 1px solid #c2c2c2;}
-
+	.boardTableTitle{padding: 10px;}
+	.boardTableText{padding: 5px;}
+	.cls1:link{color: black;}
+	.cls1:hover{text-decoration:underline;}
+	.cls1:visited{color: purple; text-decoration: underline;}
+	
 /* footer */
 
 .footerNuri{background-color: #f1f1f1;}

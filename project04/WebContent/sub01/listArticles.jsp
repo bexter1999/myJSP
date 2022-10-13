@@ -19,7 +19,7 @@
    .no-uline {text-decoration:none;}
    .sel-page{text-decoration:none;color:red;}
    .cls1 {text-decoration:none;}
-   .cls2{text-align:center; font-size:30px;}
+   .cls2{text-align:center; font-size:25px; color: black;}
   </style>
   <meta charset="UTF-8">
   <link rel="shortcut icon" href="/project04/sub01/images/police-hat.ico">
@@ -101,12 +101,12 @@
 				</div>
 			</div>
 		</div>
-<table align="center" border="1"  width="80%"  >
+<table align="center" border="1"  width="80%">
   <tr height="10" align="center"  bgcolor="#04264c">
-     <td style="color:white"><b>글번호</b></td>
-     <td style="color:white"><b>작성자</b></td>              
-     <td style="color:white"><b>제목</b></td>
-     <td style="color:white"><b>작성일</b></td>
+     <td style="color:white" class="boardTableTitle"><b>글번호</b></td>
+     <td style="color:white" class="boardTableTitle"><b>작성자</b></td>              
+     <td style="color:white" class="boardTableTitle"><b>제목</b></td>
+     <td style="color:white" class="boardTableTitle"><b>작성일</b></td>
   </tr>
 <c:choose>
   <c:when test="${empty articlesList}" >
@@ -121,8 +121,8 @@
   <c:when test="${!empty articlesList}" >
     <c:forEach  var="article" items="${articlesList }" varStatus="articleNum" >
      <tr align="center">
-	<td width="5%">${articleNum.count}</td>
-	<td width="10%">${article.id }</td>
+	<td width="5%" class="boardTableText">${articleNum.count}</td>
+	<td width="10%" class="boardTableText">${article.id }</td>
 	<td align='left'  width="35%">
 	    <span style="padding-right:30px"></span>    
 	   <c:choose>
@@ -181,7 +181,7 @@
     </c:if>
 </div>    
 <br><br>
-<a  class="cls1"  href="${contextPath}/board/articleForm.do"><p class="cls2">글쓰기</p></a>
+<a  class="cls1"  href="${contextPath}/board/articleForm.do"><p class="cls2">[ 글쓰기 ]</p></a>
 </section>
 <%@ include file="../main/footer.jsp" %>
 </body>

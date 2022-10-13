@@ -56,15 +56,15 @@
 	<p class="cls1">회원정보</p>
 	<br>
 	<br>
-	<table align="center" border="1">
+	<table align="center" border="1" width="80%">
 		<tr align="center" bgcolor="#04264c">
-			<td width="7%" style="color:white"><b>아이디</b></td>
-			<td width="7%" style="color:white"><b>비밀번호</b></td>
-			<td width="7%" style="color:white"><b>이름</b></td>
-			<td width="7%" style="color:white"><b>이메일</b></td>
-			<td width="7%" style="color:white"><b>가입일</b></td>
-			<td width="3%" style="color:white"><b>수정</b></td>
-		 	<td width="3%" style="color:white"><b>삭제</b></td>
+			<td style="color:white" class="boardTableTitle"><b>아이디</b></td>
+			<td style="color:white" class="boardTableTitle"><b>비밀번호</b></td>
+			<td style="color:white" class="boardTableTitle"><b>이름</b></td>
+			<td style="color:white" class="boardTableTitle"><b>이메일</b></td>
+			<td style="color:white" class="boardTableTitle"><b>가입일</b></td>
+			<td style="color:white" class="boardTableTitle"><b>수정</b></td>
+		 	<td style="color:white" class="boardTableTitle"><b>삭제</b></td>
 		</tr>
 		<c:choose>
     <c:when test="${empty  membersList}" >
@@ -77,13 +77,13 @@
    <c:when test="${!empty membersList}" >
       <c:forEach  var="mem" items="${membersList }" >
         <tr align="center">
-          <td>${mem.id }</td>
-          <td>${mem.pwd }</td>
-          <td>${mem.name}</td>     
-          <td>${mem.email }</td>     
-          <td>${mem.joinDate}</td>
-          <td><a href="${contextPath}/member/modMemberForm.do?id=${mem.id }">수정</a></td>
-		   <td><a href="${contextPath}/member/delMember.do?id=${mem.id }">삭제</a></td> 
+          <td class="boardTableText">${mem.id }</td>
+          <td class="boardTableText">${mem.pwd }</td>
+          <td class="boardTableText">${mem.name}</td>     
+          <td class="boardTableText">${mem.email }</td>     
+          <td class="boardTableText">${mem.joinDate}</td>
+          <td class="boardTableText"><a href="${contextPath}/member/modMemberForm.do?id=${mem.id }">수정</a></td>
+		   <td class="boardTableText"><a href="${contextPath}/member/delMember.do?id=${mem.id }">삭제</a></td> 
        </tr>
      </c:forEach>
 </c:when>
@@ -91,7 +91,7 @@
 	</table>
 	<br>
 	<br>
-	<a href="/project04/sub04/sub04.jsp"><p class="cls2">회원 가입하기</p></a>
+	<a href="/project04/sub04/sub04.jsp"><p class="cls2">[ 회원 가입하기 ]</p></a>
 	<br>
 	<br>
 	<%@ include file="../main/footer.jsp" %>

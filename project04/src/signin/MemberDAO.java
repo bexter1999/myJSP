@@ -94,6 +94,7 @@ public class MemberDAO {
 			String email = rs.getString("email");
 			Date joinDate = rs.getDate("joinDate");
 			memInfo = new MemberVO(id, pwd, name, email, joinDate);
+			rs.close();
 			pstmt.close();
 			conn.close();
 		} catch (Exception e) {
@@ -155,6 +156,7 @@ public class MemberDAO {
 			rs.next(); 
 			result = Boolean.parseBoolean(rs.getString("result"));
 			System.out.println("result=" + result);		
+			rs.close();
 			pstmt.close();
 			conn.close();
 		} catch (Exception e) {

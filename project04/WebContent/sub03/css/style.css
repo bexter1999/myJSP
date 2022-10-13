@@ -40,6 +40,11 @@ fieldset{border: none;}
 		.secLoginServiceR{width: 710px; height: 215px; float: left; margin-top: 43px;}
 			.secLoginServiceRLeft{width: 200px; height: 215px; float: left;}
 			.secLoginServiceRRight{width: 510px; height: 215px; float: left;}
+	.boardTableTitle{padding: 10px;}
+	.boardTableText{padding: 5px;}
+	.boardTableText:hover{text-decoration:underline;}	
+	.cls2{font-size: 25px; color: black;}
+	.cls2:hover{text-decoration: underline;}	
 
 #footer{width: 100%; height: 283px;}
 	.footerNuriBox{width:100%; height: 80px; background-color: #f1f1f1;}
