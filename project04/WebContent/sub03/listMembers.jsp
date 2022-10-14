@@ -50,7 +50,7 @@
 </style>
 </head>
 <body>
-	<%@ include file="../main/header.jsp" %>
+	<%@ include file="../main/headerLogin.jsp" %>
 	<br>
 	<br>
 	<p class="cls1">회원정보</p>
@@ -94,6 +94,6 @@
 	<a href="/project04/sub04/sub04.jsp"><p class="cls2">[ 회원 가입하기 ]</p></a>
 	<br>
 	<br>
-	<%@ include file="../main/footer.jsp" %>
+	<%@ include file="../main/footerLogin.jsp" %>
 </body>
 </html>

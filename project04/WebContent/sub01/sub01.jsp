@@ -112,7 +112,7 @@
 					<tr  height="10">
 						<td colspan="4">
 							<p align="center">
-								<b><span style="font-size:9pt;">등록된 글이 없습니다.</span></b>
+								<b><span style="font-size:9pt;">로그인 후에 이용해 주세요.</span></b>
 							</p>
 						</td>  
 					</tr>
@@ -144,7 +144,7 @@
 			</c:choose>	
 		</table>
 		<br>
-		<a  class="cls1"  href="${contextPath}/sub01/articleForm.jsp"><p class="cls2" color="#555555">글쓰기</p></a>
+		<a  class="cls1"  href="/project04/sub03/sub03.jsp"><p class="cls2" color="#555555">로그인 하기</p></a>
     </section>
 	<%@ include file="../main/footer.jsp" %>
 </body>

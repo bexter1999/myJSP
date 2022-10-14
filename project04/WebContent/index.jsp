@@ -109,7 +109,7 @@
 						</div>
 						<div class="sectionTBoard fl">
 							<div>
-								<a href="/project04/board/listArticles.do" class="rollOver toolTip" title="교통민원24" tabindex="">
+								<a href="sub01/sub01.jsp" class="rollOver toolTip" title="교통민원24" tabindex="">
 								<img src="images/ico_service03.png" class="secTlink" alt="교통민원24"/>
 								<div class="secTboardT">교통민원24</div>
 								</a>
@@ -133,7 +133,7 @@
 						</div>
 						<div class="sectionTBoard fl">
 							<div>
-								<a href="/project04/board/listArticles.do" class="rollOver toolTip"  title="승진및채용" tabindex="">
+								<a href="sub01/sub01.jsp" class="rollOver toolTip"  title="승진및채용" tabindex="">
 								<img src="images/ico_service06.png" class="secTlink" alt="승진및채용"/>
 								<div class="secTboardT">승진및채용</div>
 								</a>
@@ -159,7 +159,7 @@
 					<div class="report">
 						<div class="sectionTBoard fl">
 							<div class="secTfreeBoardML">
-								<a href="/project04/board/listArticles.do" class="rollOver toolTip"  title="가정,학교,성폭력 등 신고/상담" tabindex=""><img src="images/ico_report02.png" class="secTlink" alt="가정,학교,성폭력 등 신고/상담">
+								<a href="sub01/sub01.jsp" class="rollOver toolTip"  title="가정,학교,성폭력 등 신고/상담" tabindex=""><img src="images/ico_report02.png" class="secTlink" alt="가정,학교,성폭력 등 신고/상담">
 								<div class="secTboardT">가정,학교,성폭력 등<br>신고/상담</div>
 								</a>
 							</div>
@@ -180,7 +180,7 @@
 						</div>
 						<div class="sectionTBoard fl">
 							<div>
-								<a href="/project04/board/listArticles.do" class="rollOver toolTip"  title="안전신문고" tabindex=""><img src="images/ico_report05.png" class="secTlink" alt="안전신문고">
+								<a href="sub01/sub01.jsp" class="rollOver toolTip"  title="안전신문고" tabindex=""><img src="images/ico_report05.png" class="secTlink" alt="안전신문고">
 								<div class="secTboardT">안전신문고</div>
 								</a>
 							</div>
@@ -223,47 +223,47 @@
 					<div class="sectionMTabContent cf">
 						<div class="sectionMTabContentNotice">
 							<ul>
-								<li class="cf"><a href="/project04/board/listArticles.do">바닥형 보행신호등 보조장치 표준지침 개정, 배포 알림</a><span>2022-07-20</span></li>
+								<li class="cf"><a href="sub01/sub01.jsp">바닥형 보행신호등 보조장치 표준지침 개정, 배포 알림</a><span>2022-07-20</span></li>
 								<li class="cf"><a href="sub02/sub02.jsp">보행신호 자동연장시스템 표준규격 개정, 배포 알림</a><span>2022-07-20</span></li>
 								<li class="cf"><a href="sub03/sub03.jsp">보행자 작동신호기 설치지침 개정, 배포 알림</a><span>2022-07-20</span></li>
-								<li class="cf"><a href="/project04/board/listArticles.do">보행신호 음성안내 보조장치 표준지침 개정, 배포</a><span>2022-07-20</span></li>
+								<li class="cf"><a href="sub01/sub01.jsp">보행신호 음성안내 보조장치 표준지침 개정, 배포</a><span>2022-07-20</span></li>
 								<li class="cf"><a href="sub02/sub02.jsp">2022년 과학수사 분야 연구개발 기술수요조사 알림</a><span>2022-07-14</span></li>
 							</ul>
 						</div>
 						<div class="sectionMTabContentEmployment">
 							<ul>
 								<li class="cf"><a href="sub03/sub03.jsp">경찰청 경무담당관실 기간제근로자(청사방호 공무직) 최종 합격자 공고</a><span>2022-07-20</span></li>
-								<li class="cf"><a href="/project04/board/listArticles.do">경찰청 경무담당관실 기간제근로자(청사방호 공무직) 서류전형 합격자 및 면접일정 공고</a><span>2022-07-15</span></li>
+								<li class="cf"><a href="sub01/sub01.jsp">경찰청 경무담당관실 기간제근로자(청사방호 공무직) 서류전형 합격자 및 면접일정 공고</a><span>2022-07-15</span></li>
 								<li class="cf"><a href="sub02/sub02.jsp">2022년 하반기 경찰대학 강사 채용 재공고 및 추가공고</a><span>2022-07-15</span></li>
 								<li class="cf"><a href="sub03/sub03.jsp">경찰청 과학수사담당관실 무기계약직(환경미화) 최종 합격자 공고</a><span>2022-07-08</span></li>
-								<li class="cf"><a href="/project04/board/listArticles.do">경찰청 과학수사담당관실 무기계약직(환경미화) 1차 합격자 공고</a><span>2022-07-01</span></li>
+								<li class="cf"><a href="sub01/sub01.jsp">경찰청 과학수사담당관실 무기계약직(환경미화) 1차 합격자 공고</a><span>2022-07-01</span></li>
 							</ul>
 						</div>
 						<div class="sectionMTabContentBid">
 							<ul>
 								<li class="cf"><a href="sub02/sub02.jsp">제안서(규격) 평가 결과 공고(수배차량등검색시스템 노후장비 교체)</a><span>2022-05-19</span></li>
 								<li class="cf"><a href="sub03/sub03.jsp">경찰청 치안분야 국가연구개발사업 위탁정산 수행기관 모집 공고</a><span>2020-12-10</span></li>
-								<li class="cf"><a href="/project04/board/listArticles.do">경찰청 구내식당 부식납품희망업체 서류심사 결과 공고</a><span>2019-10-18</span></li>
+								<li class="cf"><a href="sub01/sub01.jsp">경찰청 구내식당 부식납품희망업체 서류심사 결과 공고</a><span>2019-10-18</span></li>
 								<li class="cf"><a href="sub02/sub02.jsp">제3차 어린이집 임대형민간투자사업(BTL) 1단계 PQ 심사결과 공지</a><span>2019-10-14</span></li>
 								<li class="cf"><a href="sub03/sub03.jsp">제2차 어린이집 임대형민간투자사업(BTL) 3단계 PQ 심사결과 공지</a><span>2019-10-02</span></li>
 							</ul>
 						</div>
 						<div class="sectionMTabContentPressRelease">
 							<ul>
-								<li class="cf"><a href="/project04/board/listArticles.do">경찰청, 필리핀·중국·태국·캄보디아에서 「2022년 전화금융사기 해외 특별 신고·자수 기간(8. 1.~10. 31)」 운영</a><span>2022-07-27</span></li>
+								<li class="cf"><a href="sub01/sub01.jsp">경찰청, 필리핀·중국·태국·캄보디아에서 「2022년 전화금융사기 해외 특별 신고·자수 기간(8. 1.~10. 31)」 운영</a><span>2022-07-27</span></li>
 								<li class="cf"><a href="sub02/sub02.jsp">인도네시아 경찰과 국제공조로 우리 기업 사기 피해금 26억 원 환수</a><span>2022-07-27</span></li>
 								<li class="cf"><a href="sub03/sub03.jsp">상반기 교통사고 사망자 역대 최저, ‘음주?보행자’ 줄고 ‘두 바퀴’ 늘었다</a><span>2022-07-26</span></li>
-								<li class="cf"><a href="/project04/board/listArticles.do">국민과 함께 미래를 준비하기 위한 아이디어 모집</a><span>2022-07-25</span></li>
+								<li class="cf"><a href="sub01/sub01.jsp">국민과 함께 미래를 준비하기 위한 아이디어 모집</a><span>2022-07-25</span></li>
 								<li class="cf"><a href="sub02/sub02.jsp">노란색 횡단보도 = 어린이 보호구역</a><span>2022-07-21</span></li>
 							</ul>
 						</div>
 						<div class="sectionMTabContentFactCheck">
 							<ul>
 								<li class="cf"><a href="sub03/sub03.jsp">YTN "두 살배기 8차로 한복판 방치했는데...일주일째 입건도 안 한 경찰" 보도 관련, 사실은 이렇습니다.</a><span>2021-03-29</span></li>
-								<li class="cf"><a href="/project04/board/listArticles.do">"분당, 여자화장실 침입과 도촬(?)에 대해 알리고자 합니다" 게시글 관련, 사실은 이렇습니다.</a><span>2020-12-03</span></li>
+								<li class="cf"><a href="sub01/sub01.jsp">"분당, 여자화장실 침입과 도촬(?)에 대해 알리고자 합니다" 게시글 관련, 사실은 이렇습니다.</a><span>2020-12-03</span></li>
 								<li class="cf"><a href="sub02/sub02.jsp">경찰청 사칭 가짜메시지 관련, 사실은 이렇습니다!</a><span>2020-07-17</span></li>
 								<li class="cf"><a href="sub03/sub03.jsp">"싸움 말리려 출동한 경찰, 되려 여성 목격자 바닥에 내리꽂아" 보도 관련, 사실은 이렇습니다.</a><span>2020-01-24</span></li>
-								<li class="cf"><a href="/project04/board/listArticles.do">병원 응급실 의사 폭행 관련 사실은 이렇습니다.</a><span>2020-01-22</span></li>
+								<li class="cf"><a href="sub01/sub01.jsp">병원 응급실 의사 폭행 관련 사실은 이렇습니다.</a><span>2020-01-22</span></li>
 							</ul>
 						</div>
 					</div>
@@ -276,7 +276,7 @@
 						<div class="sectionMinfoBBMB">이를 치안행정에 반영하겠습니다.</div>
 						<div class="sectionMinfoBBBA"><a href="sub02/sub02.jsp" class="toolTip" title="청장소개" tabindex="">ㅡ 청장소개</a></div>
 						<div class="sectionMinfoBBBB"><a href="sub03/sub03.jsp" class="toolTip" title="청장동정" tabindex="">ㅡ 청장동정</a></div>
-						<div class="sectionMinfoBBBB"><a href="/project04/board/listArticles.do" class="toolTip" title="청장과의 대화" tabindex="">ㅡ 청장과의 대화</a></div>
+						<div class="sectionMinfoBBBB"><a href="sub01/sub01.jsp" class="toolTip" title="청장과의 대화" tabindex="">ㅡ 청장과의 대화</a></div>
 					</div>
 					<div class="sectionMinfoBC cf">
 						<div class="sectionMinfoBCL fl cf">
@@ -285,10 +285,10 @@
 							<div class="fl">
 								<a href="sub02/sub02.jsp"><img src="images/youtube.png" class="youtube toolTip" title="유튜브" alt="유튜브" tabindex=""></a>
 								<a href="sub03/sub03.jsp"><img src="images/facebook.png" class="facebook toolTip" title="페이스북" alt="페이스북" tabindex=""></a>
-								<a href="/project04/board/listArticles.do"><img src="images/twitter.png" class="twitter toolTip" title="트위터" alt="트위터" tabindex=""></a>
+								<a href="sub01/sub01.jsp"><img src="images/twitter.png" class="twitter toolTip" title="트위터" alt="트위터" tabindex=""></a>
 								<a href="sub02/sub02.jsp"><img src="images/naver.png" class="naver toolTip" title="네이버 블로그" alt="네이버 블로그" tabindex=""></a>
 								<a href="sub03/sub03.jsp"><img src="images/insta.png" class="insta toolTip" title="인스타그램" alt="인스타그램" tabindex=""></a>
-								<a href="/project04/board/listArticles.do"><img src="images/kakaotalk.png" class="kakaotalk toolTip" title="카카오톡" alt="카카오톡" tabindex=""></a>
+								<a href="sub01/sub01.jsp"><img src="images/kakaotalk.png" class="kakaotalk toolTip" title="카카오톡" alt="카카오톡" tabindex=""></a>
 							</div>
 							<div class="borderRight"></div>		
 						</div>
@@ -323,7 +323,7 @@
 					</div>
 					<div class="sectionMEA sectionMEAPC" OnClick="location.href ='#'" style="cursor:pointer;">
 						<div class="sectionMEAI">
-							<a href="/project04/board/listArticles.do"><img src="images/6be2cb5e-3d69-4ef5-85d9-2ded741a2b05.jpg" alt="정부보조금 부정수급 집중신고" tabindex=""></a>
+							<a href="sub01/sub01.jsp"><img src="images/6be2cb5e-3d69-4ef5-85d9-2ded741a2b05.jpg" alt="정부보조금 부정수급 집중신고" tabindex=""></a>
 							<div class="sectionMEATA">정부보조금 부정수급 집중신고⋯</div>
 							<div class="sectionMEATB">기간: 5.16.~8.16.(3개월) 신고대상: 5대</div>
 							<div class="sectionMEATC">중점분야 정부보조금 부정수급 관련⋯</div>
@@ -361,7 +361,7 @@
 					</div>
 				</div>
 				<div class="sectionBCBdiv toolTip" title="민주 · 인권 · 민생경찰의 뿌리">
-					<div class="sectionBCB" OnClick="location.href ='/project04/board/listArticles.do'" style="cursor:pointer;">
+					<div class="sectionBCB" OnClick="location.href ='sub01/sub01.jsp'" style="cursor:pointer;">
 						<div class="sectionBRtit">민주 · 인권 · 민생경찰의 뿌리</div>
 						<div class="sectionBRtext">당신을 영원히 기억하겠습니다.<br>우리는 그들을 잊지 못합니다.</div>
 						<div class="sectionBRlink"><a href="#">자세히 보기&nbsp;&nbsp;&nbsp; →</a></div>
@@ -387,7 +387,7 @@
 					<div class="secBCH cf">
 						<div class="fl">
 							<div class="staffInfoDiv">
-								<a href="/project04/board/listArticles.do" class="toolTip" title="직원정보"><div class="staffInfo">직원정보</div></a>
+								<a href="sub01/sub01.jsp" class="toolTip" title="직원정보"><div class="staffInfo">직원정보</div></a>
 							</div>
 							<div class="policeInfoDiv fl">
 							<a href="sub02/sub02.jsp" class="toolTip" title="경찰관련정보"><div class="policeInfo">경찰관련정보</div></a>
@@ -406,7 +406,7 @@
 						<div class="secBCHI fl">
 							<div class="secBCHIcon">
 								<div class="toolTip" title="경찰복지포털">
-									<a href="/project04/board/listArticles.do" tabindex="" class="pmaaA">
+									<a href="sub01/sub01.jsp" tabindex="" class="pmaaA">
 									<img src="images/ico_stf_info02.png" class="pmaa" alt="경찰복지포털"/>
 									<div class="pmaaT">경찰복지포털</div>
 									</a>
@@ -436,7 +436,7 @@
 						<div class="secBCHI fl">
 							<div class="secBCHIcon">
 								<div class="toolTip" title="내부비리신고">
-									<a href="/project04/board/listArticles.do" tabindex="" class="pmaaA">
+									<a href="sub01/sub01.jsp" tabindex="" class="pmaaA">
 									<img src="images/ico_stf_info05.png" class="pmaa" alt="내부비리신고"/>
 									<div class="pmaaT">내부비리신고</div>
 									</a>
@@ -458,10 +458,10 @@
 				<div class="sectionBCHB">
 					<div class="sectionBCHBslideShow">
 						<a href="sub03/sub03.jsp" class="toolTip" title="경찰Poice"><img src="images/banner1.jpg" alt="배너이미지1"/></a>
-						<a href="/project04/board/listArticles.do" class="alt toolTip" title="중앙경찰학교"><img src="images/banner2.png" alt="배너이미지2"/></a>
+						<a href="sub01/sub01.jsp" class="alt toolTip" title="중앙경찰학교"><img src="images/banner2.png" alt="배너이미지2"/></a>
 						<a href="sub02/sub02.jsp" class="alt toolTip" title="경찰특공대"><img src="images/banner3.jpg" alt="배너이미지3"/></a>
 						<a href="sub03/sub03.jsp" class="alt toolTip" title="해양경찰"><img src="images/banner4.png" alt="배너이미지4"/></a>
-						<a href="/project04/board/listArticles.do" class="alt toolTip" title="대한민국육군군사경찰"><img src="images/banner5.jpg" alt="배너이미지5"/></a>
+						<a href="sub01/sub01.jsp" class="alt toolTip" title="대한민국육군군사경찰"><img src="images/banner5.jpg" alt="배너이미지5"/></a>
 						<a href="sub02/sub02.jsp" class="alt toolTip" title="학교전담경찰관"><img src="images/banner6.jpg" alt="배너이미지6"/></a>
 					</div>
 				</div>

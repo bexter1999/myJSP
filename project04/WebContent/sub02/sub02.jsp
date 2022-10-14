@@ -22,11 +22,11 @@
         <div class="secBoardLinkBox">
 			<div class="secBoardLink cf">
 				<a href="../index.jsp"><img src="images/home.PNG" alt="홈 버튼" tabindex=""></a>
-				<div class="secBoardLinkText" OnClick="location.href ='/project04/board/listArticles.do'" style="cursor:pointer;">소통/공감 ></div>
+				<div class="secBoardLinkText" OnClick="location.href ='../sub01/sub01.jsp'" style="cursor:pointer;">소통/공감 ></div>
 				<div class="secBoardLinkText" OnClick="location.href ='../sub03/sub03.jsp'" style="cursor:pointer;">소통게시판 ></div>
-				<div class="secBoardLinkText bgGray" OnClick="location.href ='/project04/board/listArticles.do'" style="cursor:pointer;">자유게시판</div>
+				<div class="secBoardLinkText bgGray" OnClick="location.href ='../sub01/sub01.jsp'" style="cursor:pointer;">자유게시판</div>
 				<a href="../sub03/sub03.jsp"><img src="images/link.png" id="link" alt="링크" tabindex=""></a>
-				<a href="/project04/board/listArticles.do"><img src="images/print.PNG" id="print" alt="프린트" tabindex=""></a>
+				<a href="../sub01/sub01.jsp"><img src="images/print.PNG" id="print" alt="프린트" tabindex=""></a>
 			</div>
 		</div>
         <div class="secSearchBox">
@@ -34,11 +34,11 @@
                 <div class="clameQna"><h2>민원 FAQ</h2></div>
                 <div class="clameQnaIndex">
                     <div class="fl clameQnaAll clameQnaBox " OnClick="location.href ='../sub03/sub03.jsp'" style="cursor:pointer;">전체</div>
-                    <div class="fl clameQnaSafe clameQnaBox" OnClick="location.href ='/project04/board/listArticles.do'" style="cursor:pointer;">생활안전</div>
+                    <div class="fl clameQnaSafe clameQnaBox" OnClick="location.href ='../sub01/sub01.jsp'" style="cursor:pointer;">생활안전</div>
                     <div class="fl clameQnaTraffic clameQnaBox" OnClick="location.href ='../sub03/sub03.jsp'" style="cursor:pointer;">교통</div>
-                    <div class="fl clameQnaDetective clameQnaBox" OnClick="location.href ='/project04/board/listArticles.do'" style="cursor:pointer;">수사 ‧ 형사</div>
+                    <div class="fl clameQnaDetective clameQnaBox" OnClick="location.href ='../sub01/sub01.jsp'" style="cursor:pointer;">수사 ‧ 형사</div>
                     <div class="fl clameQnaWoman clameQnaBox" OnClick="location.href ='../sub03/sub03.jsp'" style="cursor:pointer;">여성청소년</div>
-                    <div class="fl clameQnaLife clameQnaBox" OnClick="location.href ='/project04/board/listArticles.do'" style="cursor:pointer;">생활민원</div>
+                    <div class="fl clameQnaLife clameQnaBox" OnClick="location.href ='../sub01/sub01.jsp'" style="cursor:pointer;">생활민원</div>
                 </div>
             </div>
             <div class="secSearchBoxM">
@@ -80,129 +80,12 @@
 				<div class="title1 fl"><span>번호</span></div>
 				<div class="title2 fl"><span>제목</span></div>
 			</div>
-			<div class="secBoardContent">
-				<input type="radio" id="click01" name="click"/>
-				<div class="boardNumber"></div>
-				<div class="title2">
-					<label for="click01" class="boardTitleText cf"></label></div>
-				<div class="contentWrap">
-					<div class="subject"></div>
-					<div class="content"></div>
-				</div>
-			</div>	
-			<div class="secBoardContent">
-				<input type="radio" id="click02" name="click"/>
-				<div class="boardNumber"></div>
-				<div class="title2">
-					<label for="click02" class="boardTitleText cf"></label></div>
-				<div class="contentWrap">
-					<div class="subject"></div>
-					<div class="content"></div>
-				</div>
-			</div>	
-			<div class="secBoardContent">
-				<input type="radio" id="click03" name="click"/>
-				<div class="boardNumber"></div>
-				<div class="title2">
-					<label for="click03" class="boardTitleText cf"></label></div>
-				<div class="contentWrap">
-					<div class="subject"></div>
-					<div class="content"></div>
-				</div>
-			</div>
-			<div class="secBoardContent">
-				<input type="radio" id="click04" name="click"/>
-				<div class="boardNumber"></div>
-				<div class="title2">
-					<label for="click04" class="boardTitleText cf"></label></div>
-				<div class="contentWrap">
-					<div class="subject"></div>
-					<div class="content"></div>
-				</div>
-			</div>
-			<div class="secBoardContent">
-				<input type="radio" id="click05" name="click"/>
-				<div class="boardNumber"></div>
-				<div class="title2">
-					<label for="click05" class="boardTitleText cf"></label></div>
-				<div class="contentWrap">
-					<div class="subject"></div>
-					<div class="content"></div>
-				</div>
-			</div>
-			<div class="secBoardContent">
-				<input type="radio" id="click06" name="click"/>
-				<div class="boardNumber"></div>
-				<div class="title2">
-					<label for="click06" class="boardTitleText cf"></label></div>
-				<div class="contentWrap">
-					<div class="subject"></div>
-					<div class="content"></div>
-				</div>
-			</div>
-			<div class="secBoardContent">
-				<input type="radio" id="click07" name="click"/>
-				<div class="boardNumber"></div>
-				<div class="title2">
-					<label for="click07" class="boardTitleText cf"></label></div>
-				<div class="contentWrap">
-					<div class="subject"></div>
-					<div class="content"></div>
-				</div>
-			</div>
-			<div class="secBoardContent">
-				<input type="radio" id="click08" name="click"/>
-				<div class="boardNumber"></div>
-				<div class="title2">
-					<label for="click08" class="boardTitleText cf"></label></div>
-				<div class="contentWrap">
-					<div class="subject"></div>
-					<div class="content"></div>
-				</div>
-			</div>
-			<div class="secBoardContent">
-				<input type="radio" id="click09" name="click"/>
-				<div class="boardNumber"></div>
-				<div class="title2">
-					<label for="click09" class="boardTitleText cf"></label></div>
-				<div class="contentWrap">
-					<div class="subject"></div>
-					<div class="content"></div>
-				</div>
-			</div>	
-			<div class="secBoardContent">
-				<input type="radio" id="click10" name="click"/>
-				<div class="boardNumber"></div>
-				<div class="title2">
-					<label for="click10" class="boardTitleText cf"></label></div>
-				<div class="contentWrap">
-					<div class="subject"></div>
-					<div class="content"></div>
-				</div>
-			</div>	
-        </div>
-		<div class="secPageNumber">
-			<form action="#" method=""> <!--post-->
-				<fieldset>
-					<button type="submit" class="myWriting" style="cursor:pointer;">나의 게시물 바로보기</button>
-					<button type="submit" class="Writing" style="cursor:pointer;">글쓰기</button>
-				</fieldset>
-			</form>
-			<div class="boardPageNumber fl cf">
-				<div class="boardPageNumber1 colorRed fl" OnClick="location.href ='#'" style="cursor:pointer;">1</div>
-				<div class="boardPageNumber2 fl" OnClick="location.href ='#'" style="cursor:pointer;">2</div>
-				<div class="boardPageNumber3 fl" OnClick="location.href ='#'" style="cursor:pointer;">3</div>
-				<div class="boardPageNumber4 fl" OnClick="location.href ='#'" style="cursor:pointer;">4</div>
-				<div class="boardPageNumber5 fl" OnClick="location.href ='#'" style="cursor:pointer;">5</div>
-				<div class="boardPageNumber6 fl" OnClick="location.href ='#'" style="cursor:pointer;">6</div>
-				<div class="boardPageNumber7 fl" OnClick="location.href ='#'" style="cursor:pointer;">7</div>
-				<div class="boardPageNumber8 fl" OnClick="location.href ='#'" style="cursor:pointer;">8</div>
-				<div class="boardPageNumber9 fl" OnClick="location.href ='#'" style="cursor:pointer;">9</div>
-				<div class="boardPageNumber10 boardPageNumberBR fl" OnClick="location.href ='#'" style="cursor:pointer;">10</div>
-				<div class="boardPageNumber11 fl" OnClick="location.href ='#'" style="cursor:pointer;"> ></div>
-				<div class="boardPageNumber12 boardPageNumberBR fl" OnClick="location.href ='#'" style="cursor:pointer;">>></div>
-			</div>	
-		</div>
+			<div class="loginPls">로그인 후 이용해 주세요.</div>
+			<a href="/project04/sub03/sub03.jsp" class="loginPlsLink">로그인 하기</a>
+		</div>	
+			
+			
+			
     </section>
 	<%@ include file="../main/footer.jsp" %>
 </body>
