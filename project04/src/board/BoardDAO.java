@@ -86,6 +86,7 @@ public class BoardDAO {
 	  return articlesList;
     } 
 	
+	
 	public List selectAllArticles() {
 		List articlesList = new ArrayList();
 		try {
